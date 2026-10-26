@@ -1,0 +1,103 @@
+# clean/ — analysis-ready data
+
+Flat, tidy copies of everything under `data/`. Raw files are left untouched;
+regenerate this folder anytime with `python scripts/clean.py`.
+
+## Conventions (apply everywhere)
+
+- **Columns:** single-row, `snake_case`. FBref stat groups are prefixed, e.g.
+  `performance_gls`, `per_90_minutes_gls`, `expected_xg` (where present).
+- **Seasons:** `"2425"` = 2024/25, `"2526"` = 2025/26.
+- **Team names:** canonical, no club affixes — `Barcelona`, not `FC Barcelona`.
+  Safe to join across sources on `team`.
+- **Shot coordinates:** `x`, `y` on a **0–100** scale, attacking toward `x=100`.
+  (Raw Understat is 0–1; already rescaled here.)
+- **xG:** present in Understat/SofaScore-derived files. FBref files have **no xG**
+  (the source is currently serving pages with xG stripped).
+
+## Files
+
+| File | Rows | What / key columns |
+|---|---|---|
+| `players/<stat>.csv` (11) | ~7.9k | FBref player season stats, 7 leagues × 2 seasons. Join: `league, season, team, player`. No xG. |
+| `teams/<stat>.csv` (11) | ~200–270 | FBref team season stats. Join: `league, season, team`. |
+| `understat_players.csv` | 5,549 | La Liga-family per-player xG (`xg, np_xg, xa, xg_chain, xg_buildup, shots, key_passes`). Join: `player, team, season`. |
+| `wc_players/<stat>.csv` (11) | 1,039 | World Cup 2026 player stats (incl. a `club` column). |
+| `wc_teams/<stat>.csv` (11) | 48 | World Cup 2026 team stats. |
+| `barca_shots.csv` | 2,726 | **Unified Barça shots** — La Liga (Understat) + Champions League (SofaScore). `season, competition, date, team, player, xg, x, y, situation, body_part, outcome, minute, source`. `outcome ∈ {goal, saved, missed, blocked, post, own_goal}`. |
+| `barca_passing_network.csv` | 1,980 | Per-player-per-match node layout, all comps. `season, date, competition, venue, opponent, player, avg_x, avg_y, touches`. Node positions only (no pass edges). |
+| `barca_allcomps_2425.csv` / `_2526.csv` | 60 / 57 | Every Barça match, all comps: `date, comp, venue, result, gf, ga, opponent, poss, formation, …`. No xG for UCL/Copa. |
+| `wc_shots.csv` | 2,651 | Every World Cup 2026 shot. `date, round, team, opponent, player, xg, xgot, x, y, situation, body_part, outcome, minute`. |
+
+## Quick start
+
+```python
+import pandas as pd
+shots = pd.read_csv('data/clean/barca_shots.csv')
+barca = shots[shots.team == 'Barcelona']
+# xG per player, both competitions
+barca.groupby('player').xg.sum().sort_values(ascending=False).head(10)
+```
+
+## Coverage ceiling (no free source fills these for 24/25–25/26)
+
+- xG for Copa del Rey / Supercopa (patchy) and for FBref tables (stripped).
+- True pass **edges** and chance-creation **origin** coordinates (need paid event data).
+
+## sofifa_players.csv (2,790) — money + physical
+
+Current-snapshot player data from SoFIFA (EA FC 26). **Transfermarkt blocks
+automated access behind human verification**, so this is the substitute for the
+money side.
+
+`player, surname_key, positions, team, league, age, overall, potential,
+value_eur, wage_eur, release_clause_eur, contract_start, contract_end,
+pace, acceleration, sprint_speed, jumping, strength, heading,
+def_awareness, standing_tackle, sliding_tackle, defending, physical, ...`
+
+- **Values are EA's model, not Transfermarkt quotes** — directionally useful,
+  not a transfer fee. `release_clause_eur` is often the more actionable number
+  for La Liga targets.
+- `contract_end` is populated for 2,520 / 2,790 (loans and some deals lack it).
+- **Pace/acceleration/sprint are EA scouted ratings, not GPS data.** Use as a
+  screening filter for the high-line CB question, not as truth.
+- One row per player (current snapshot), **not** per season.
+- Joining: SoFIFA abbreviates first names ("K. Mbappé"), so join on
+  `surname_key` + team + age rather than full name.
+
+## sofascore_player_seasons.csv (5,400 × 123) — replaces FBref's dead tables
+
+Per-player season aggregates for the top-5 leagues, both seasons, from
+SofaScore. **This is the primary source for defensive and passing detail**,
+because FBref now serves those tables empty (see ceiling note above).
+
+Key fields (all 100% populated): `minutesPlayed, aerialDuelsWon(+Percentage),
+groundDuelsWon(+Percentage), totalDuelsWonPercentage, clearances,
+interceptions, blockedShots, tackles, tacklesWon(+Percentage),
+accuratePasses(+Percentage), accurateOwnHalfPasses,
+accurateOppositionHalfPasses, accurateLongBalls(+Percentage),
+accurateFinalThirdPasses, keyPasses, errorLeadToShot, errorLeadToGoal`
+plus attacking fields (goals, xG, bigChancesMissed, etc.).
+
+Join key: `player_id` + `season`; or `player` + `team` + `season`.
+
+
+## Measured physical data (2025/26 only)
+
+SofaScore reports real tracking figures, not estimates:
+
+| Column | Meaning |
+|---|---|
+| `ss_topSpeed` | season maximum speed, km/h (median ≈ 34.2, max ≈ 37.2) |
+| `ss_kilometersCovered` | total distance over the season |
+| `ss_numberOfSprints` | total sprints over the season |
+
+Available for **2025/26 only** (93% of that season's rows, 0% of 2024/25).
+
+**Prefer these over `fifa_pace`.** EA's scouted pace rating correlates with
+measured top speed at only **r = 0.14** across 2,301 comparable rows, so it is
+close to noise as a speed proxy.
+
+Caveat: top speed is a season *maximum*, so more minutes means more chances to
+record a high value (r = 0.31 with minutes played). Apply a minutes floor before
+comparing players, and use sprints per 90 rather than raw totals.
