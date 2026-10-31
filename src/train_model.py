@@ -168,3 +168,141 @@ def log_results_to_mongodb(
             "_id": f"run_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}",
             "created_at": datetime.now(timezone.utc).isoformat(),
             "target_regression": "ss_rating",
+            "target_classification": "is_high_performer",
+            "sample_counts": evaluation_summary["sample_counts"],
+            "regression_metrics": evaluation_summary["regression"],
+            "classification_metrics": evaluation_summary["classification"],
+            "best_models": evaluation_summary["best_models"],
+            "top_features": evaluation_summary["top_features"],
+        }
+        ml_col.insert_one(doc)
+        print("   Saved ML evaluation results to MongoDB collection 'ml_results'.")
+        return True
+    except Exception as e:
+        print(f"   ℹ️  Note: Could not log to MongoDB ml_results collection: {e}")
+        return False
+    finally:
+        if client:
+            client.close()
+
+
+def train_and_evaluate(
+    csv_path: Optional[Path] = None,
+    models_dir: Optional[Path] = None,
+    output_dir: Optional[Path] = None,
+) -> Dict[str, Any]:
+    """Execute complete end-to-end Machine Learning pipeline with strict leak prevention."""
+    if csv_path is None:
+        csv_path = PROJECT_ROOT / "data/top5-football-dataset-master/data/master/player_seasons.csv"
+    if models_dir is None:
+        models_dir = PROJECT_ROOT / "models"
+    if output_dir is None:
+        output_dir = PROJECT_ROOT / "output"
+
+    models_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    print("\n" + "=" * 70)
+    print(" FOOTBALLIQ MACHINE LEARNING TRAINING & EVALUATION PIPELINE")
+    print("=" * 70)
+
+    # 1. Load raw dataset
+    print(f"\n[INFO] Loading dataset from {csv_path}...")
+    df = pd.read_csv(csv_path, low_memory=False)
+
+    # 2. Filter eligible rows
+    preprocessor = FootballDataPreprocessor(min_minutes=450, rating_threshold=7.0)
+    eligible_df = preprocessor.prepare_data(df)
+
+    stratify_target = (eligible_df["ss_rating"] >= 7.0).astype(int)
+
+    # 3. Train/Test Split (80/20) with stratification
+    print("[INFO] Partitioning dataset into Train (80%) and Test (20%) sets...")
+    train_df, test_df = train_test_split(
+        eligible_df, test_size=0.2, random_state=42, stratify=stratify_target
+    )
+
+    # 4. Fit preprocessor ONLY on training set (Leakage Prevention)
+    print("[INFO] Fitting preprocessor exclusively on training partition to avoid target leakage...")
+    preprocessor.fit(train_df)
+    preprocessor.save(models_dir / "preprocessor.joblib")
+
+    X_train, y_reg_train, y_clf_train, meta_train = preprocessor.transform(train_df)
+    X_test, y_reg_test, y_clf_test, meta_test = preprocessor.transform(test_df)
+
+    feature_names = preprocessor.feature_columns_
+    print(f"   Training samples: {len(X_train):,} | Testing samples: {len(X_test):,}")
+    print(f"   Features count: {len(feature_names)}")
+
+    # 5. Train & Evaluate Regression Models
+    reg_results, reg_models, best_reg_name = evaluate_regression_models(
+        X_train, X_test, y_reg_train, y_reg_test
+    )
+
+    # 6. Train & Evaluate Classification Models
+    clf_results, clf_models, best_clf_name = evaluate_classification_models(
+        X_train, X_test, y_clf_train, y_clf_test
+    )
+
+    # 7. Extract Feature Importances from best models
+    top_features = extract_feature_importances(reg_models[best_reg_name], feature_names, top_k=8)
+    print(f"\n[INFO] Top 8 Feature Importances ({best_reg_name}):")
+    for item in top_features:
+        print(f"   - {item['feature']:<30}: {item['importance']:.4f}")
+
+    # 8. Save Best Models to Disk
+    best_reg_path = models_dir / "best_regression_model.joblib"
+    best_clf_path = models_dir / "best_classification_model.joblib"
+    joblib.dump(reg_models[best_reg_name], best_reg_path)
+    joblib.dump(clf_models[best_clf_name], best_clf_path)
+    print(f"\n[SAVED] Best regression model to: {best_reg_path}")
+    print(f"[SAVED] Best classification model to: {best_clf_path}")
+
+    # 9. Generate & Save Predictions Table
+    test_predictions_df = meta_test.copy()
+    test_predictions_df["actual_rating"] = np.round(y_reg_test, 2)
+    test_predictions_df["predicted_rating_lr"] = np.round(reg_models["Linear Regression"].predict(X_test), 2)
+    test_predictions_df["predicted_rating_rf"] = np.round(reg_models["Random Forest Regressor"].predict(X_test), 2)
+    test_predictions_df["actual_high_performer"] = y_clf_test
+    test_predictions_df["pred_high_performer_logreg"] = clf_models["Logistic Regression"].predict(X_test)
+    test_predictions_df["pred_high_performer_rf"] = clf_models["Random Forest Classifier"].predict(X_test)
+
+    preds_csv_path = output_dir / "ml_test_predictions.csv"
+    test_predictions_df.to_csv(preds_csv_path, index=False)
+    print(f"[SAVED] Test predictions table ({len(test_predictions_df):,} rows) to: {preds_csv_path}")
+
+    # 10. Save Evaluation Results Summary
+    summary = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "sample_counts": {
+            "total_eligible": len(eligible_df),
+            "train": len(X_train),
+            "test": len(X_test),
+        },
+        "regression": reg_results,
+        "classification": clf_results,
+        "best_models": {
+            "regression": best_reg_name,
+            "classification": best_clf_name,
+        },
+        "top_features": top_features,
+    }
+
+    summary_json_path = output_dir / "ml_evaluation_results.json"
+    with open(summary_json_path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2)
+    print(f"[SAVED] Evaluation metrics JSON to: {summary_json_path}")
+
+    # 11. Log to MongoDB ml_results collection if reachable
+    log_results_to_mongodb(summary)
+
+    print("\n" + "=" * 70)
+    print(" MACHINE LEARNING PIPELINE COMPLETED SUCCESSFULLY")
+    print("=" * 70)
+
+    return summary
+
+
+if __name__ == "__main__":
+    train_and_evaluate()
+
