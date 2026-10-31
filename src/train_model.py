@@ -90,3 +90,81 @@ def evaluate_regression_models(
     return results, fitted_models, best_model_name
 
 
+def evaluate_classification_models(
+    X_train: np.ndarray,
+    X_test: np.ndarray,
+    y_train: np.ndarray,
+    y_test: np.ndarray,
+) -> Tuple[Dict[str, Any], Dict[str, Any], str]:
+    """Train and evaluate Logistic Regression, Decision Tree, and Random Forest Classifiers."""
+    models = {
+        "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42),
+        "Decision Tree Classifier": DecisionTreeClassifier(max_depth=5, random_state=42),
+        "Random Forest Classifier": RandomForestClassifier(
+            n_estimators=100, max_depth=10, random_state=42, n_jobs=-1
+        ),
+    }
+
+    results: Dict[str, Dict[str, float]] = {}
+    fitted_models: Dict[str, Any] = {}
+    best_model_name = ""
+    best_f1 = -float("inf")
+
+    print("\n--- Classification Task: High-Impact Performer (Rating >= 7.0) ---")
+    for name, model in models.items():
+        model.fit(X_train, y_train)
+        preds = model.predict(X_test)
+
+        acc = float(accuracy_score(y_test, preds))
+        prec = float(precision_score(y_test, preds, zero_division=0))
+        rec = float(recall_score(y_test, preds, zero_division=0))
+        f1 = float(f1_score(y_test, preds, zero_division=0))
+
+        results[name] = {
+            "accuracy": round(acc, 4),
+            "precision": round(prec, 4),
+            "recall": round(rec, 4),
+            "f1_score": round(f1, 4),
+        }
+        fitted_models[name] = model
+
+        print(f"   {name:<26} -> Acc: {acc:.4f} | Precision: {prec:.4f} | Recall: {rec:.4f} | F1: {f1:.4f}")
+
+        if f1 > best_f1:
+            best_f1 = f1
+            best_model_name = name
+
+    print(f"   [BEST] Classification Model: {best_model_name} (F1 = {best_f1:.4f})")
+    return results, fitted_models, best_model_name
+
+
+def extract_feature_importances(
+    model: Any, feature_names: List[str], top_k: int = 10
+) -> List[Dict[str, Any]]:
+    """Extract top feature weights or importances from a trained model."""
+    importances: List[Tuple[str, float]] = []
+
+    if hasattr(model, "feature_importances_"):
+        raw_vals = model.feature_importances_
+        importances = [(feature_names[i], float(raw_vals[i])) for i in range(len(feature_names))]
+    elif hasattr(model, "coef_"):
+        raw_vals = np.abs(model.coef_).ravel()
+        importances = [(feature_names[i], float(raw_vals[i])) for i in range(len(feature_names))]
+
+    importances.sort(key=lambda x: x[1], reverse=True)
+    return [{"feature": feat, "importance": round(val, 4)} for feat, val in importances[:top_k]]
+
+
+def log_results_to_mongodb(
+    evaluation_summary: Dict[str, Any]
+) -> bool:
+    """Save model evaluation metrics and run metadata to the MongoDB ml_results collection."""
+    client = None
+    try:
+        client, db = get_mongo_client(timeout_ms=3000)
+        ml_col = db["ml_results"]
+
+        doc = {
+            "_id": f"run_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "target_regression": "ss_rating",
