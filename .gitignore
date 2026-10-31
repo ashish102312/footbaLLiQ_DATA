@@ -7,6 +7,7 @@ env/
 __pycache__/
 *.py[cod]
 *$py.class
+*.ipynb_checkpoints/
 
 # Databases and large files (>100MB)
 *.sqlite
@@ -17,6 +18,14 @@ data/database.sqlite
 # Secrets and environment configs
 .env
 .env.*
+!.env.example
+
+# Model checkpoints and large binaries
+models/*.joblib
+models/*.pkl
+
+# Generated run logs
+*.log
 
 # Operating System files
 .DS_Store
