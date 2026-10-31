@@ -1,0 +1,769 @@
+player,team,league,season_label,pos,age,playing_time_min,actual_rating,predicted_rating_lr,predicted_rating_rf,actual_high_performer,pred_high_performer_logreg,pred_high_performer_rf
+Álvaro djaló,Athletic Club,ESP-La Liga,2024/25,"MF,FW",24.0,659,6.65,6.61,6.61,0,0,0
+Mariano Troilo,Parma,ITA-Serie A,2025/26,DF,22.0,1625,6.94,6.83,6.83,0,0,0
+Iago Aspas,Celta Vigo,ESP-La Liga,2025/26,"FW,MF",37.0,1140,6.84,7.05,7.01,0,1,0
+Archie Gray,Tottenham,ENG-Premier League,2024/25,"DF,MF",18.0,1751,6.56,6.68,6.74,0,0,0
+Shuto Machino,Gladbach,GER-Bundesliga,2025/26,"FW,MF",25.0,1076,6.68,6.67,6.69,0,0,0
+Luiz Felipe,Rayo Vallecano,ESP-La Liga,2025/26,DF,28.0,470,6.68,6.69,6.67,0,0,0
+Federico Dimarco,Inter,ITA-Serie A,2025/26,MF,27.0,2698,7.43,7.58,7.37,1,1,1
+Malik Tillman,Leverkusen,GER-Bundesliga,2025/26,MF,23.0,1674,6.93,7.04,6.92,0,1,0
+Dango Ouattara,Bournemouth,ENG-Premier League,2024/25,"MF,FW",22.0,2005,7.09,6.96,7.05,1,0,1
+Paulo Dybala,Roma,ITA-Serie A,2025/26,"MF,FW",31.0,1354,6.9,7.05,7.17,0,1,1
+Carlos Alcaraz,Everton,ENG-Premier League,2025/26,MF,22.0,689,6.5,6.71,6.67,0,0,0
+Manolis Saliakas,St Pauli,GER-Bundesliga,2025/26,MF,28.0,1106,6.95,6.88,6.83,0,0,0
+Jahmai Simpson-Pusey,Köln,GER-Bundesliga,2025/26,DF,19.0,863,6.57,6.82,6.85,0,0,0
+Ademola Lookman,Atalanta,ITA-Serie A,2024/25,"MF,FW",26.0,2247,7.32,7.34,7.29,1,1,1
+Conor Bradley,Liverpool,ENG-Premier League,2024/25,DF,21.0,754,6.81,6.79,6.74,0,0,0
+Pablo Pagis,Lorient,FRA-Ligue 1,2025/26,"MF,FW",22.0,1756,7.08,7.15,7.12,1,1,1
+Christian Kofane,Leverkusen,GER-Bundesliga,2025/26,FW,19.0,1239,6.71,6.8,6.78,0,0,0
+Yanis Zouaoui,Le Havre,FRA-Ligue 1,2025/26,"DF,MF",27.0,2338,6.66,6.86,6.81,0,0,0
+Alexander Prass,Hoffenheim,GER-Bundesliga,2025/26,MF,24.0,1308,6.81,6.87,6.81,0,0,0
+Roberto Piccoli,Fiorentina,ITA-Serie A,2025/26,FW,24.0,1672,6.51,6.63,6.71,0,0,0
+Christos Mandas,Lazio,ITA-Serie A,2024/25,GK,22.0,810,7.22,7.02,6.94,1,0,0
+Caio Henrique,Monaco,FRA-Ligue 1,2025/26,"DF,MF",28.0,1536,6.75,6.8,6.8,0,0,0
+Takefusa Kubo,Real Sociedad,ESP-La Liga,2024/25,"MF,FW",23.0,2372,7.07,6.96,7.03,1,0,1
+Giuliano Simeone,Atlético Madrid,ESP-La Liga,2024/25,MF,21.0,1926,6.91,6.89,7.02,0,0,0
+Pavel Kadeřábek,Hoffenheim,GER-Bundesliga,2024/25,"MF,DF",32.0,1576,6.76,6.82,6.79,0,0,0
+Kike Pérez,Venezia,ITA-Serie A,2024/25,MF,27.0,1114,6.83,6.77,6.75,0,0,0
+Emmanuel Agbadou,Reims,FRA-Ligue 1,2024/25,DF,27.0,1260,7.06,6.89,6.93,1,0,0
+Urko González,Espanyol,ESP-La Liga,2025/26,MF,24.0,2623,6.68,6.65,6.74,0,0,0
+Oussama Targhalline,Le Havre,FRA-Ligue 1,2024/25,MF,22.0,990,6.69,6.68,6.66,0,0,0
+Federico Ravaglia,Bologna,ITA-Serie A,2025/26,GK,25.0,1470,7.17,7.03,6.92,1,1,0
+Stephan El Shaarawy,Roma,ITA-Serie A,2024/25,"MF,FW",31.0,1098,6.86,6.84,6.84,0,0,0
+Bernardo,Hoffenheim,GER-Bundesliga,2025/26,DF,30.0,2312,6.86,6.87,6.89,0,0,0
+Tom Louchet,Nice,FRA-Ligue 1,2024/25,"DF,MF",21.0,775,6.91,6.9,6.88,0,0,0
+Nikola Vasilj,St Pauli,GER-Bundesliga,2024/25,GK,28.0,2969,7.12,6.96,7.0,1,0,1
+Yannick Gerhardt,Wolfsburg,GER-Bundesliga,2024/25,"MF,DF",30.0,1518,6.66,6.68,6.65,0,0,0
+Stanko Jurić,Valladolid,ESP-La Liga,2024/25,MF,27.0,1729,6.6,6.7,6.79,0,0,0
+Igor Jesus,Nottingham,ENG-Premier League,2025/26,FW,24.0,2298,6.58,6.75,6.73,0,0,0
+Diego Coppola,Hellas Verona,ITA-Serie A,2024/25,DF,20.0,2927,6.9,6.76,6.83,0,0,0
+Florian Wirtz,Leverkusen,GER-Bundesliga,2024/25,MF,21.0,2351,7.68,7.47,7.37,1,1,1
+Adam Buksa,Udinese,ITA-Serie A,2025/26,FW,29.0,922,6.7,6.65,6.72,0,0,0
+Nathaniel Clyne,Crystal Palace,ENG-Premier League,2025/26,"MF,DF",34.0,594,6.58,6.72,6.68,0,0,0
+Lucas Paquetá,West Ham,ENG-Premier League,2025/26,"MF,FW",27.0,1511,6.91,6.92,6.88,0,0,0
+Edoardo Corvi,Parma,ITA-Serie A,2025/26,GK,24.0,1530,6.98,7.07,6.97,0,1,0
+Lucas Bergström,Mallorca,ESP-La Liga,2025/26,GK,22.0,450,7.06,6.75,6.84,1,0,0
+David Jurásek,Hoffenheim,GER-Bundesliga,2024/25,"DF,MF",23.0,619,6.58,6.68,6.66,0,0,0
+Tim Kleindienst,Gladbach,GER-Bundesliga,2024/25,FW,28.0,2737,7.29,7.13,7.05,1,1,1
+Rafik Belghali,Hellas Verona,ITA-Serie A,2025/26,MF,23.0,1920,6.7,6.69,6.78,0,0,0
+Khvicha Kvaratskhelia,Napoli,ITA-Serie A,2024/25,"FW,MF",23.0,1178,7.27,6.93,6.98,1,0,0
+Stoichkov,Alavés,ESP-La Liga,2024/25,"MF,FW",30.0,699,6.7,6.64,6.7,0,0,0
+Giorgi Mamardashvili,Valencia,ESP-La Liga,2024/25,GK,23.0,3060,6.89,6.89,7.05,0,0,1
+Jens Odgaard,Bologna,ITA-Serie A,2024/25,MF,25.0,1952,6.85,6.81,6.75,0,0,0
+Álex Remiro,Real Sociedad,ESP-La Liga,2025/26,GK,30.0,3330,6.94,7.12,7.13,0,1,0
+Bryan Mbeumo,Brentford,ENG-Premier League,2024/25,"MF,FW",24.0,3414,7.47,7.51,7.4,1,1,1
+Maxence Caqueret,Como,ITA-Serie A,2025/26,MF,25.0,1485,6.84,6.95,6.9,0,0,0
+Djibril Sidibé,Toulouse,FRA-Ligue 1,2024/25,DF,32.0,2101,6.94,6.91,6.92,0,0,0
+Edu Expósito,Espanyol,ESP-La Liga,2025/26,MF,28.0,2523,7.06,7.07,7.16,1,1,1
+Philip Otele,Hamburger SV,GER-Bundesliga,2025/26,"MF,FW",26.0,471,6.65,6.68,6.66,0,0,0
+Alisson,Liverpool,ENG-Premier League,2024/25,GK,31.0,2508,7.09,7.11,7.01,1,1,1
+Matteo Prati,Cagliari,ITA-Serie A,2025/26,MF,21.0,1268,6.62,6.83,6.74,0,0,0
+Aleksandr Golovin,Monaco,FRA-Ligue 1,2025/26,MF,29.0,1649,6.85,6.94,6.89,0,0,0
+Robin Koch,Frankfurt,GER-Bundesliga,2024/25,DF,28.0,2586,7.09,7.01,6.95,1,0,0
+Felipe Loyola,Pisa,ITA-Serie A,2025/26,MF,24.0,538,6.41,6.63,6.58,0,0,0
+Nicola Leali,Genoa,ITA-Serie A,2025/26,GK,32.0,1847,6.88,6.87,6.95,0,0,0
+Assane Diao,Como,ITA-Serie A,2024/25,"MF,FW",18.0,1252,6.72,6.74,6.73,0,0,0
+Razvan Sava,Udinese,ITA-Serie A,2025/26,GK,23.0,620,6.67,6.64,6.68,0,0,0
+Luka Modrić,Real Madrid,ESP-La Liga,2024/25,MF,38.0,1827,7.38,7.39,7.28,1,1,1
+Jorge Herrando,Osasuna,ESP-La Liga,2024/25,DF,23.0,1366,6.75,6.68,6.8,0,0,0
+Mateus Fernandes,West Ham,ENG-Premier League,2025/26,MF,21.0,3016,7.19,7.05,7.03,1,1,1
+Dylan Batubinsika,Saint-Étienne,FRA-Ligue 1,2024/25,DF,28.0,2016,6.64,6.91,6.92,0,0,0
+Arijanet Muric,Ipswich Town,ENG-Premier League,2024/25,GK,25.0,1620,7.09,6.95,6.96,1,0,0
+Johan Bakayoko,RB Leipzig,GER-Bundesliga,2025/26,"FW,MF",22.0,777,6.72,6.69,6.69,0,0,0
+Mërgim Vojvoda,Como,ITA-Serie A,2024/25,DF,29.0,717,6.84,6.97,6.82,0,0,0
+Luca Marianucci,Torino,ITA-Serie A,2025/26,DF,21.0,575,6.68,6.71,6.63,0,0,0
+Pol Lozano,Espanyol,ESP-La Liga,2025/26,MF,25.0,2157,6.66,6.74,6.8,0,0,0
+Tanguy Ndombele,Nice,FRA-Ligue 1,2024/25,MF,27.0,1131,6.96,6.84,6.86,0,0,0
+Jaydee Canvot,Crystal Palace,ENG-Premier League,2025/26,DF,19.0,1336,7.15,6.53,6.67,1,0,0
+Álvaro Rodríguez,Getafe,ESP-La Liga,2024/25,FW,20.0,852,6.89,6.63,6.67,0,0,0
+Alessio Castro-Montes,Köln,GER-Bundesliga,2025/26,"MF,DF",28.0,672,6.81,6.92,6.81,0,0,0
+Philipp Sander,Gladbach,GER-Bundesliga,2024/25,MF,26.0,1400,6.79,6.84,6.82,0,0,0
+Cameron Puertas,Werder Bremen,GER-Bundesliga,2025/26,MF,26.0,1846,6.66,6.86,6.84,0,0,0
+Toni Martínez,Alavés,ESP-La Liga,2024/25,FW,27.0,1012,6.88,6.77,6.81,0,0,0
+Ridle Baku,Wolfsburg,GER-Bundesliga,2024/25,MF,26.0,1170,7.0,6.98,6.92,0,0,0
+Teun Koopmeiners,Juventus,ITA-Serie A,2025/26,"MF,DF",27.0,1827,6.74,6.83,6.85,0,0,0
+Andreas Hountondji,St Pauli,GER-Bundesliga,2025/26,FW,23.0,1067,6.42,6.54,6.63,0,0,0
+Oliver Baumann,Hoffenheim,GER-Bundesliga,2025/26,GK,35.0,3060,6.79,7.07,7.06,0,1,1
+Julen Agirrezabala,Athletic Club,ESP-La Liga,2024/25,GK,23.0,1206,6.94,6.8,6.93,0,0,0
+Antonio Rüdiger,Real Madrid,ESP-La Liga,2024/25,DF,31.0,2291,7.03,6.95,6.94,1,0,0
+Sebastian Walukiewicz,Torino,ITA-Serie A,2024/25,DF,24.0,1661,6.73,6.68,6.71,0,0,0
+Akor Adams,Sevilla,ESP-La Liga,2025/26,FW,25.0,2064,6.7,6.76,6.77,0,0,0
+Max Finkgräfe,RB Leipzig,GER-Bundesliga,2025/26,DF,21.0,504,6.66,6.85,6.8,0,0,0
+Alidu Seidu,Rennes,FRA-Ligue 1,2025/26,DF,25.0,1186,6.86,6.88,6.84,0,0,0
+Luca Waldschmidt,Köln,GER-Bundesliga,2025/26,"FW,MF",29.0,677,6.79,6.89,6.81,0,0,0
+Kim Min-jae,Bayern Munich,GER-Bundesliga,2025/26,DF,28.0,1602,7.23,7.05,6.96,1,1,0
+Finn Ole Becker,Hoffenheim,GER-Bundesliga,2024/25,MF,24.0,670,6.83,6.76,6.75,0,0,0
+Abdou Harroui,Hellas Verona,ITA-Serie A,2024/25,"MF,FW",26.0,463,6.73,6.72,6.61,0,0,0
+Takefusa Kubo,Real Sociedad,ESP-La Liga,2025/26,MF,24.0,1503,7.02,6.92,6.97,1,0,0
+Joakim Mæhle,Wolfsburg,GER-Bundesliga,2024/25,"DF,MF",27.0,2188,6.85,6.86,6.85,0,0,0
+Pablo Martínez,Levante,ESP-La Liga,2025/26,MF,27.0,1857,6.87,6.84,6.9,0,0,0
+Olivier Deman,Werder Bremen,GER-Bundesliga,2025/26,"DF,MF",25.0,1254,6.87,6.87,6.89,0,0,0
+Mario Pašalić,Atalanta,ITA-Serie A,2025/26,MF,30.0,1936,6.88,7.07,7.01,0,1,0
+Bryan Mbeumo,Manchester Utd,ENG-Premier League,2025/26,"MF,FW",25.0,2609,6.84,6.98,7.03,0,0,1
+Alphonse Areola,West Ham,ENG-Premier League,2024/25,GK,31.0,2260,6.87,6.99,7.01,0,0,1
+Benedikt Gimber,Heidenheim,GER-Bundesliga,2024/25,DF,27.0,2671,6.74,6.78,6.85,0,0,0
+Jorrel Hato,Chelsea,ENG-Premier League,2025/26,DF,19.0,1148,6.53,6.78,6.75,0,0,0
+Pervis Estupiñán,Brighton,ENG-Premier League,2024/25,DF,26.0,2402,7.01,6.98,6.97,1,0,0
+Mohammed Salisu,Monaco,FRA-Ligue 1,2025/26,DF,26.0,1080,7.03,6.85,6.84,1,0,0
+Kyle Walker,Manchester City,ENG-Premier League,2024/25,DF,34.0,970,6.71,6.76,6.75,0,0,0
+Arda Güler,Real Madrid,ESP-La Liga,2025/26,MF,20.0,2014,7.17,7.35,7.35,1,1,1
+Henrik Meister,Pisa,ITA-Serie A,2025/26,FW,21.0,1515,6.43,6.44,6.59,0,0,0
+Hugo Magnetti,Brest,FRA-Ligue 1,2024/25,MF,26.0,2323,6.67,6.73,6.78,0,0,0
+Kyle Walker-Peters,West Ham,ENG-Premier League,2025/26,DF,28.0,1383,6.67,6.78,6.81,0,0,0
+Pol Lozano,Espanyol,ESP-La Liga,2024/25,MF,24.0,1943,6.69,6.66,6.69,0,0,0
+Mohamed Kaba,Nantes,FRA-Ligue 1,2025/26,MF,23.0,918,6.62,6.68,6.68,0,0,0
+Thilo Kehrer,Monaco,FRA-Ligue 1,2025/26,DF,28.0,2353,6.9,6.94,6.96,0,0,0
+Ardian Ismajli,Empoli,ITA-Serie A,2024/25,DF,27.0,2508,7.01,6.81,6.85,1,0,0
+Jan Oblak,Atlético Madrid,ESP-La Liga,2025/26,GK,32.0,2700,7.1,6.92,6.97,1,0,1
+Mattia Perin,Juventus,ITA-Serie A,2024/25,GK,31.0,450,7.06,6.8,6.85,1,0,0
+Saúl Coco,Torino,ITA-Serie A,2025/26,DF,26.0,3088,6.87,6.87,6.88,0,0,0
+Radosław Majecki,Brest,FRA-Ligue 1,2025/26,GK,25.0,864,6.65,6.89,6.86,0,0,0
+Amadou Haidara,RB Leipzig,GER-Bundesliga,2024/25,MF,26.0,1320,6.79,6.79,6.71,0,0,0
+Elye Wahi,Nice,FRA-Ligue 1,2025/26,FW,22.0,922,6.4,6.7,6.67,0,0,0
+Tyler Adams,Bournemouth,ENG-Premier League,2024/25,MF,25.0,1965,6.85,6.86,6.84,0,0,0
+Vinicius Júnior,Real Madrid,ESP-La Liga,2024/25,"FW,MF",24.0,2253,7.37,7.21,7.29,1,1,1
+Martin Frese,Hellas Verona,ITA-Serie A,2025/26,"MF,DF",27.0,2408,6.76,6.88,6.91,0,0,0
+Vakoun Bayo,Udinese,ITA-Serie A,2025/26,FW,28.0,453,6.41,6.55,6.56,0,0,0
+Charles De Ketelaere,Atalanta,ITA-Serie A,2025/26,"MF,FW",24.0,2177,7.22,7.1,7.18,1,1,1
+Evann Guessand,Aston Villa,ENG-Premier League,2025/26,MF,24.0,588,6.56,6.67,6.62,0,0,0
+Arsène Kouassi,Lorient,FRA-Ligue 1,2025/26,MF,20.0,2605,6.92,6.93,7.0,0,0,1
+Luis Pérez,Valladolid,ESP-La Liga,2024/25,DF,29.0,2558,6.71,6.77,6.82,0,0,0
+Robin Gosens,Fiorentina,ITA-Serie A,2024/25,"DF,MF",30.0,2521,7.06,7.03,7.0,1,1,0
+Luca Kerber,Heidenheim,GER-Bundesliga,2024/25,MF,22.0,783,6.63,6.71,6.64,0,0,0
+Robin Gosens,Fiorentina,ITA-Serie A,2025/26,"DF,MF",31.0,1881,6.88,6.79,6.81,0,0,0
+Pape Gueye,Villarreal,ESP-La Liga,2025/26,MF,26.0,2131,7.08,7.02,7.0,1,1,1
+Andreas Hanche-Olsen,Mainz 05,GER-Bundesliga,2025/26,DF,28.0,851,6.65,6.7,6.77,0,0,0
+Nikola Milenković,Nottingham,ENG-Premier League,2025/26,DF,27.0,3375,6.81,6.84,7.0,0,0,0
+Romain Del Castillo,Brest,FRA-Ligue 1,2024/25,"FW,MF",28.0,1259,7.07,7.09,6.94,1,1,0
+David Torres,Valladolid,ESP-La Liga,2024/25,DF,21.0,1387,6.57,6.61,6.63,0,0,0
+Guillermo Maripán,Torino,ITA-Serie A,2024/25,DF,30.0,2340,6.89,6.85,6.82,0,0,0
+Frank Anguissa,Napoli,ITA-Serie A,2025/26,MF,29.0,1258,6.93,6.9,6.79,0,0,0
+Amadou Onana,Aston Villa,ENG-Premier League,2024/25,MF,22.0,1617,6.95,6.92,6.91,0,0,0
+Gerrit Holtmann,Bochum,GER-Bundesliga,2024/25,"MF,DF",29.0,1136,6.88,6.79,6.72,0,0,0
+Fabio Carvalho,Brentford,ENG-Premier League,2024/25,"FW,MF",21.0,455,6.67,6.7,6.63,0,0,0
+Juan Rodríguez,Cagliari,ITA-Serie A,2025/26,DF,20.0,1310,6.68,6.81,6.81,0,0,0
+Wladimiro Falcone,Lecce,ITA-Serie A,2025/26,GK,30.0,3420,6.99,6.9,7.04,0,0,1
+Thierno Barry,Everton,ENG-Premier League,2025/26,FW,22.0,1914,6.53,6.6,6.69,0,0,0
+Michel Ndary Adopo,Cagliari,ITA-Serie A,2025/26,MF,25.0,3050,6.61,6.73,6.82,0,0,0
+Sofiane Diop,Nice,FRA-Ligue 1,2025/26,"MF,FW",25.0,2130,6.89,6.98,6.99,0,0,0
+Danilho Doekhi,Union Berlin,GER-Bundesliga,2024/25,DF,26.0,3060,6.82,6.72,6.82,0,0,0
+Mats Hummels,Roma,ITA-Serie A,2024/25,DF,35.0,915,7.05,6.79,6.81,1,0,0
+Álex Jiménez,Milan,ITA-Serie A,2024/25,"MF,DF",19.0,1266,6.84,6.74,6.77,0,0,0
+Elliot Anderson,Nottingham,ENG-Premier League,2025/26,MF,22.0,3331,7.34,7.34,7.33,1,1,1
+Gabriel Magalhães,Arsenal,ENG-Premier League,2025/26,DF,27.0,2751,7.27,7.14,7.0,1,1,0
+Serge Gnabry,Bayern Munich,GER-Bundesliga,2024/25,"MF,FW",29.0,1242,7.05,7.08,7.07,1,1,1
+Timo Horn,Bochum,GER-Bundesliga,2024/25,GK,31.0,1170,6.81,6.73,7.09,0,0,0
+Shuto Machino,Holstein Kiel,GER-Bundesliga,2024/25,"FW,MF",24.0,1953,7.06,6.99,6.87,1,0,0
+Ousmane Camara,Angers,FRA-Ligue 1,2025/26,DF,22.0,2718,6.84,6.9,6.89,0,0,0
+Martin Baturina,Como,ITA-Serie A,2025/26,"MF,FW",22.0,1569,7.12,7.2,7.2,1,1,1
+Michael Svoboda,Venezia,ITA-Serie A,2024/25,DF,25.0,1314,6.86,6.82,6.78,0,0,0
+Florian Grillitsch,Hoffenheim,GER-Bundesliga,2024/25,"MF,DF",28.0,601,6.78,6.78,6.74,0,0,0
+Raúl Moro,Osasuna,ESP-La Liga,2025/26,MF,22.0,625,6.64,6.65,6.73,0,0,0
+Matias Fernandez-Pardo,Lille,FRA-Ligue 1,2024/25,"MF,FW",19.0,1065,6.86,6.79,6.81,0,0,0
+Esteban Lepaul,Angers,FRA-Ligue 1,2024/25,FW,24.0,1629,6.88,6.76,6.72,0,0,0
+David López,Mallorca,ESP-La Liga,2025/26,DF,22.0,837,6.66,6.71,6.74,0,0,0
+Víctor García,Levante,ESP-La Liga,2025/26,"MF,FW",27.0,1040,6.78,6.77,6.79,0,0,0
+Vincent Sierro,Toulouse,FRA-Ligue 1,2024/25,MF,28.0,2402,7.02,7.0,6.91,1,0,0
+Issa Soumaré,Le Havre,FRA-Ligue 1,2025/26,"FW,MF",24.0,2948,7.08,6.89,6.98,1,0,1
+Kamory Doumbia,Brest,FRA-Ligue 1,2025/26,MF,22.0,1750,6.8,6.98,6.93,0,0,0
+Lukáš Hrádecký,Monaco,FRA-Ligue 1,2025/26,GK,35.0,1439,6.79,7.12,6.99,0,1,0
+Dimitri Foulquier,Valencia,ESP-La Liga,2024/25,DF,31.0,2299,6.68,6.75,6.77,0,0,0
+Rolando Mandragora,Fiorentina,ITA-Serie A,2024/25,MF,27.0,1931,7.07,7.04,7.0,1,1,0
+Oliver Burke,Werder Bremen,GER-Bundesliga,2024/25,FW,27.0,908,6.88,6.79,6.78,0,0,0
+Francesco Folino,Cremonese,ITA-Serie A,2025/26,DF,23.0,722,6.69,6.62,6.73,0,0,0
+Caoimhín Kelleher,Brentford,ENG-Premier League,2025/26,GK,26.0,3330,7.05,6.99,7.07,1,1,1
+Iliman Ndiaye,Everton,ENG-Premier League,2025/26,MF,25.0,2778,6.87,6.93,6.99,0,0,0
+Leo Østigård,Hoffenheim,GER-Bundesliga,2024/25,DF,24.0,927,6.79,6.7,6.74,0,0,0
+Yann Sommer,Inter,ITA-Serie A,2025/26,GK,36.0,2960,6.92,6.96,6.88,0,0,0
+Rémy Labeau Lascary,Brest,FRA-Ligue 1,2025/26,"MF,FW",22.0,1200,6.72,6.77,6.76,0,0,0
+Quentin Merlin,Rennes,FRA-Ligue 1,2025/26,"DF,MF",23.0,2533,6.91,7.0,7.0,0,1,1
+Matthis Abline,Nantes,FRA-Ligue 1,2024/25,FW,21.0,2768,6.92,6.83,6.92,0,0,0
+Alan Matturro,Genoa,ITA-Serie A,2024/25,DF,19.0,900,6.63,6.6,6.61,0,0,0
+Vitor Roque,Real Betis,ESP-La Liga,2024/25,FW,19.0,1235,6.71,6.66,6.69,0,0,0
+Abdul Fatawu Issahaku,Leicester City,ENG-Premier League,2024/25,"MF,FW",20.0,579,7.06,6.78,6.8,1,0,0
+Grady Diangana,Elche,ESP-La Liga,2025/26,"MF,FW",27.0,926,6.54,6.65,6.63,0,0,0
+Jean-Charles Castelletto,Nantes,FRA-Ligue 1,2024/25,"DF,MF",29.0,2620,6.8,6.82,6.85,0,0,0
+Rui Silva,Real Betis,ESP-La Liga,2024/25,GK,30.0,1350,7.04,6.95,6.91,1,0,0
+José Luis Palomino,Cagliari,ITA-Serie A,2024/25,DF,34.0,1081,6.78,6.76,6.79,0,0,0
+Elvis Rexhbeçaj,Augsburg,GER-Bundesliga,2025/26,MF,27.0,1118,6.63,6.7,6.68,0,0,0
+Antoine Semenyo,Manchester City,ENG-Premier League,2025/26,"MF,FW",25.0,1397,7.02,7.01,6.99,1,0,0
+Tomoya Ando,St Pauli,GER-Bundesliga,2025/26,DF,26.0,1260,6.69,6.86,6.87,0,0,0
+Ryan Sessegnon,Fulham,ENG-Premier League,2024/25,"MF,DF",24.0,580,6.97,6.88,6.75,0,0,0
+Malang Sarr,Lens,FRA-Ligue 1,2025/26,DF,26.0,2925,7.21,7.01,7.03,1,1,1
+Salis Abdul Samed,Nice,FRA-Ligue 1,2025/26,MF,25.0,911,6.48,6.6,6.6,0,0,0
+Maxime Dupé,Nice,FRA-Ligue 1,2025/26,GK,32.0,720,6.5,7.15,6.97,0,1,1
+Lucas Beraldo,PSG,FRA-Ligue 1,2024/25,DF,20.0,2011,7.07,7.12,7.03,1,1,1
+Ümit Akdag,Toulouse,FRA-Ligue 1,2024/25,DF,20.0,500,6.7,6.68,6.65,0,0,0
+Sergi Darder,Mallorca,ESP-La Liga,2024/25,MF,30.0,2744,7.04,6.98,7.0,1,0,1
+Takuma Asano,Mallorca,ESP-La Liga,2025/26,"MF,FW",30.0,664,6.53,6.61,6.61,0,0,0
+Jean-Philippe Gbamin,Metz,FRA-Ligue 1,2025/26,"DF,MF",29.0,2485,6.59,6.96,6.87,0,0,0
+Martin Valjent,Mallorca,ESP-La Liga,2024/25,DF,28.0,2763,6.96,6.92,6.88,0,0,0
+Kristoffer Ajer,Brentford,ENG-Premier League,2024/25,DF,26.0,1438,6.66,6.65,6.69,0,0,0
+Samuel Mbangula,Juventus,ITA-Serie A,2024/25,MF,20.0,709,6.91,6.85,6.84,0,0,0
+Nadir Zortea,Cagliari,ITA-Serie A,2024/25,MF,25.0,2713,6.63,6.79,6.84,0,0,0
+Yvon Mvogo,Lorient,FRA-Ligue 1,2025/26,GK,31.0,2790,6.99,7.03,7.08,0,1,1
+Caleb Ekuban,Genoa,ITA-Serie A,2025/26,"FW,MF",31.0,994,6.6,6.72,6.71,0,0,0
+Riccardo Orsolini,Bologna,ITA-Serie A,2024/25,"MF,FW",27.0,1878,7.25,7.25,7.09,1,1,1
+Dwight McNeil,Everton,ENG-Premier League,2025/26,MF,25.0,1168,6.63,6.67,6.71,0,0,0
+Héctor Bellerín,Real Betis,ESP-La Liga,2025/26,DF,30.0,1822,6.73,6.96,6.9,0,0,0
+Lewis Dunk,Brighton,ENG-Premier League,2025/26,DF,33.0,2838,6.95,7.12,7.03,0,1,0
+Nnamdi Collins,Frankfurt,GER-Bundesliga,2025/26,DF,21.0,1500,6.69,6.91,6.88,0,0,0
+Charlie Cresswell,Toulouse,FRA-Ligue 1,2024/25,DF,21.0,2592,7.07,6.97,6.94,1,0,0
+Akor Adams,Montpellier,FRA-Ligue 1,2024/25,FW,24.0,1075,6.52,6.6,6.61,0,0,0
+Abdoulaye Touré,Le Havre,FRA-Ligue 1,2025/26,MF,31.0,740,6.87,6.76,6.73,0,0,0
+Javi Puado,Espanyol,ESP-La Liga,2025/26,"MF,FW",27.0,674,6.59,6.6,6.63,0,0,0
+Rassoul Ndiaye,Le Havre,FRA-Ligue 1,2024/25,MF,22.0,1061,6.75,6.75,6.71,0,0,0
+Marcos André,Valladolid,ESP-La Liga,2024/25,FW,27.0,1188,6.66,6.62,6.66,0,0,0
+Sebastian Otoa,Genoa,ITA-Serie A,2025/26,DF,21.0,829,6.65,6.76,6.8,0,0,0
+Ethan Pinnock,Brentford,ENG-Premier League,2024/25,DF,31.0,1913,6.95,6.9,6.88,0,0,0
+Mario Götze,Frankfurt,GER-Bundesliga,2025/26,MF,33.0,886,6.54,6.71,6.78,0,0,0
+Adrián,Real Betis,ESP-La Liga,2024/25,GK,37.0,1710,6.88,6.88,6.94,0,0,0
+Moritz Broschinski,Bochum,GER-Bundesliga,2024/25,"FW,MF",23.0,1390,6.53,6.61,6.65,0,0,0
+Johannes Eggestein,St Pauli,GER-Bundesliga,2024/25,FW,26.0,1853,6.76,6.64,6.72,0,0,0
+Dani Carvajal,Real Madrid,ESP-La Liga,2025/26,DF,33.0,977,6.79,6.78,6.79,0,0,0
+Arkadiusz Pyrka,St Pauli,GER-Bundesliga,2025/26,MF,22.0,2576,6.65,6.76,6.77,0,0,0
+Álex Muñoz,Las Palmas,ESP-La Liga,2024/25,DF,30.0,1415,6.82,6.81,6.77,0,0,0
+Tino Livramento,Newcastle,ENG-Premier League,2024/25,DF,21.0,2840,6.89,6.86,6.81,0,0,0
+Dennis Geiger,Hoffenheim,GER-Bundesliga,2024/25,MF,26.0,734,6.62,6.71,6.67,0,0,0
+Riccardo Sottil,Lecce,ITA-Serie A,2025/26,"FW,MF",26.0,1066,6.76,6.75,6.87,0,0,0
+Matteo Politano,Napoli,ITA-Serie A,2024/25,"FW,MF",30.0,2804,7.06,6.93,7.01,1,0,1
+Adrien Truffert,Bournemouth,ENG-Premier League,2025/26,DF,23.0,3379,6.79,6.99,7.04,0,0,1
+Luis Díaz,Liverpool,ENG-Premier League,2024/25,"FW,MF",27.0,2399,7.23,7.22,7.21,1,1,1
+Javi Rodríguez,Celta Vigo,ESP-La Liga,2024/25,DF,21.0,2514,6.89,7.0,6.93,0,0,0
+Ethan Nwaneri,Arsenal,ENG-Premier League,2024/25,"FW,MF",17.0,895,6.93,6.85,6.82,0,0,0
+Mikel Merino,Arsenal,ENG-Premier League,2024/25,"MF,FW",28.0,1586,7.02,6.93,6.86,1,0,0
+Lutsharel Geertruida,Sunderland,ENG-Premier League,2025/26,"DF,MF",25.0,1693,6.8,6.71,6.73,0,0,0
+Oriol Romeu,Girona,ESP-La Liga,2024/25,MF,32.0,1356,6.7,6.79,6.76,0,0,0
+Eric Smith,St Pauli,GER-Bundesliga,2025/26,"DF,MF",28.0,2311,6.86,6.97,6.9,0,0,0
+Conor Gallagher,Atlético Madrid,ESP-La Liga,2024/25,MF,24.0,1633,6.87,6.85,6.8,0,0,0
+Lucien Agoume,Sevilla,ESP-La Liga,2024/25,MF,22.0,2114,6.95,6.92,6.86,0,0,0
+Luca Jaquez,Stuttgart,GER-Bundesliga,2025/26,DF,22.0,898,6.82,6.79,6.75,0,0,0
+Kevin Stöger,Gladbach,GER-Bundesliga,2025/26,MF,31.0,1324,6.77,6.85,6.85,0,0,0
+Davide Bartesaghi,Milan,ITA-Serie A,2025/26,"MF,DF",19.0,2441,6.91,6.95,6.91,0,0,0
+Gift Orban,Hoffenheim,GER-Bundesliga,2024/25,FW,22.0,687,6.69,6.57,6.63,0,0,0
+Johan Vásquez,Genoa,ITA-Serie A,2024/25,DF,25.0,3041,7.09,6.98,6.96,1,1,0
+Florian Thauvin,Lens,FRA-Ligue 1,2025/26,MF,32.0,2443,7.23,7.34,7.25,1,1,1
+Neal Maupay,Marseille,FRA-Ligue 1,2024/25,FW,27.0,1042,6.71,6.81,6.78,0,0,0
+Dani Rodríguez,Mallorca,ESP-La Liga,2024/25,"MF,FW",36.0,2162,6.93,6.9,6.9,0,0,0
+Ian Maatsen,Aston Villa,ENG-Premier League,2024/25,DF,22.0,1139,6.8,6.9,6.88,0,0,0
+Romelu Lukaku,Napoli,ITA-Serie A,2024/25,FW,31.0,2843,6.99,6.94,6.98,0,0,0
+Tiago Tomás,Wolfsburg,GER-Bundesliga,2024/25,"MF,FW",22.0,1884,6.82,6.8,6.8,0,0,0
+Giovanni Fabbian,Bologna,ITA-Serie A,2024/25,MF,21.0,1023,6.57,6.64,6.68,0,0,0
+Fran Garcia,Real Madrid,ESP-La Liga,2025/26,"DF,MF",25.0,929,6.64,6.71,6.75,0,0,0
+Luke Thomas,Leicester City,ENG-Premier League,2024/25,DF,23.0,1110,6.84,6.72,6.72,0,0,0
+Ilaix Moriba,Celta Vigo,ESP-La Liga,2025/26,MF,22.0,2495,6.77,6.86,6.9,0,0,0
+Ionuț Radu,Venezia,ITA-Serie A,2024/25,GK,27.0,1350,7.01,7.12,7.12,1,1,0
+Luis Milla,Getafe,ESP-La Liga,2025/26,MF,30.0,3271,7.02,7.06,7.08,1,0,1
+Aurélien Tchouaméni,Real Madrid,ESP-La Liga,2024/25,"DF,MF",24.0,2689,7.1,6.97,7.04,1,0,1
+Ivan Provedel,Lazio,ITA-Serie A,2024/25,GK,30.0,2610,6.87,7.13,7.03,0,1,1
+Jordan James,Rennes,FRA-Ligue 1,2024/25,MF,20.0,1178,6.9,6.82,6.81,0,0,0
+Josha Vagnoman,Stuttgart,GER-Bundesliga,2025/26,"DF,MF",24.0,1587,6.43,6.76,6.79,0,0,0
+Adri Embarba,Rayo Vallecano,ESP-La Liga,2024/25,"MF,FW",32.0,1607,6.71,6.71,6.73,0,0,0
+Sadibou Sané,Metz,FRA-Ligue 1,2025/26,DF,21.0,1940,6.94,7.02,6.93,0,1,0
+Jordan Zemura,Udinese,ITA-Serie A,2024/25,"MF,DF",24.0,1415,6.67,6.73,6.68,0,0,0
+Alexander Sørloth,Atlético Madrid,ESP-La Liga,2025/26,FW,29.0,1980,6.79,6.87,6.84,0,0,0
+Gonçalo Ramos,PSG,FRA-Ligue 1,2025/26,FW,24.0,1318,6.58,6.86,6.78,0,0,0
+Luis Vázquez,Getafe,ESP-La Liga,2025/26,FW,24.0,1194,6.64,6.58,6.66,0,0,0
+Léo Pétrot,Elche,ESP-La Liga,2025/26,DF,28.0,1572,6.66,6.78,6.83,0,0,0
+Yoann Salmier,Le Havre,FRA-Ligue 1,2024/25,DF,31.0,797,6.78,6.75,6.81,0,0,0
+Aimar Oroz,Osasuna,ESP-La Liga,2024/25,MF,22.0,2966,6.99,6.93,7.0,0,0,0
+Abdoulaye Faye,Lorient,FRA-Ligue 1,2025/26,DF,20.0,1444,6.56,6.81,6.79,0,0,0
+Joel Fujita,St Pauli,GER-Bundesliga,2025/26,MF,23.0,2665,6.71,6.81,6.87,0,0,0
+Joe Scally,Gladbach,GER-Bundesliga,2025/26,"DF,MF",22.0,2608,6.62,6.78,6.83,0,0,0
+Paweł Dawidowicz,Hellas Verona,ITA-Serie A,2024/25,"DF,MF",29.0,1845,6.5,6.66,6.73,0,0,0
+Martín Payero,Udinese,ITA-Serie A,2024/25,MF,25.0,1381,6.81,6.75,6.77,0,0,0
+Seko Fofana,Rennes,FRA-Ligue 1,2024/25,MF,29.0,844,6.89,6.85,6.82,0,0,0
+Thomas Meunier,Lille,FRA-Ligue 1,2025/26,DF,33.0,1909,6.86,6.9,6.88,0,0,0
+Gideon Mensah,Auxerre,FRA-Ligue 1,2025/26,DF,27.0,2327,6.81,6.81,6.78,0,0,0
+Patrick Osterhage,Freiburg,GER-Bundesliga,2024/25,MF,24.0,2267,6.76,6.77,6.79,0,0,0
+Jean-Ricner Bellegarde,Wolves,ENG-Premier League,2024/25,MF,26.0,1677,6.82,6.89,6.91,0,0,0
+Sergi Cardona,Villarreal,ESP-La Liga,2024/25,DF,25.0,2945,7.08,6.97,6.97,1,0,1
+Yéremy Pino,Crystal Palace,ENG-Premier League,2025/26,"MF,FW",22.0,2080,7.1,6.42,6.84,1,0,0
+Bertrand Traoré,Sunderland,ENG-Premier League,2025/26,"MF,FW",29.0,632,6.75,6.71,6.72,0,0,0
+Rodrigo Muniz,Fulham,ENG-Premier League,2025/26,FW,24.0,1000,6.55,6.53,6.65,0,0,0
+Aarón Escandell,Oviedo,ESP-La Liga,2025/26,GK,29.0,3240,7.24,7.16,7.12,1,1,1
+Carlens Arcus,Angers,FRA-Ligue 1,2025/26,DF,29.0,2040,6.68,6.87,6.84,0,0,0
+Malick Thiaw,Newcastle,ENG-Premier League,2025/26,DF,23.0,2965,7.02,7.04,7.12,1,1,1
+Caleb Okoli,Leicester City,ENG-Premier League,2024/25,DF,23.0,1125,6.75,6.73,6.73,0,0,0
+Isaac Romero,Sevilla,ESP-La Liga,2024/25,FW,24.0,2156,6.53,6.64,6.71,0,0,0
+Stefan de Vrij,Inter,ITA-Serie A,2025/26,DF,33.0,670,7.03,6.82,6.8,1,0,0
+Finn Jeltsch,Stuttgart,GER-Bundesliga,2024/25,DF,18.0,780,6.77,6.81,6.91,0,0,0
+Pedro Neto,Chelsea,ENG-Premier League,2024/25,"MF,FW",24.0,2269,7.01,6.97,7.05,1,0,1
+Wesley,Roma,ITA-Serie A,2025/26,MF,21.0,2448,6.42,6.52,6.63,0,0,0
+Jonathan Clauss,Nice,FRA-Ligue 1,2025/26,"MF,DF",32.0,2530,6.95,7.19,7.2,0,1,1
+Carlos Vicente,Alavés,ESP-La Liga,2024/25,MF,25.0,3092,6.94,6.92,6.97,0,0,0
+Brennan Johnson,Crystal Palace,ENG-Premier League,2025/26,"MF,FW",24.0,1112,6.61,6.61,6.67,0,0,0
+Destiny Udogie,Tottenham,ENG-Premier League,2025/26,"DF,MF",22.0,1338,6.54,6.67,6.72,0,0,0
+Willian Pacho,PSG,FRA-Ligue 1,2025/26,DF,23.0,1914,6.97,6.98,6.93,0,0,0
+Felix Mambimbi,Le Havre,FRA-Ligue 1,2025/26,"FW,MF",24.0,530,6.49,6.63,6.59,0,0,0
+Simon Sohm,Fiorentina,ITA-Serie A,2025/26,MF,24.0,708,6.62,6.8,6.78,0,0,0
+Alex Meret,Napoli,ITA-Serie A,2025/26,GK,28.0,979,6.72,6.78,6.82,0,0,0
+Patrick Ciurria,Monza,ITA-Serie A,2024/25,MF,29.0,1111,6.79,6.73,6.75,0,0,0
+Benedikt Gimber,Heidenheim,GER-Bundesliga,2025/26,DF,28.0,1436,6.43,6.75,6.77,0,0,0
+Sean Longstaff,Newcastle,ENG-Premier League,2024/25,MF,26.0,798,6.69,6.69,6.71,0,0,0
+Chris Wood,Nottingham,ENG-Premier League,2025/26,FW,33.0,901,6.59,6.59,6.65,0,0,0
+Jackson Tchatchoua,Hellas Verona,ITA-Serie A,2024/25,"MF,DF",22.0,3167,6.67,6.76,6.84,0,0,0
+Granit Xhaka,Leverkusen,GER-Bundesliga,2024/25,MF,31.0,2888,7.41,7.38,7.37,1,1,1
+Lorenz Assignon,Stuttgart,GER-Bundesliga,2025/26,"DF,MF",25.0,1094,6.56,6.73,6.68,0,0,0
+Kelvin Amian,Nantes,FRA-Ligue 1,2025/26,DF,27.0,1961,6.61,6.75,6.82,0,0,0
+Louis Leroux,Nantes,FRA-Ligue 1,2024/25,"MF,DF",18.0,816,6.92,6.85,6.84,0,0,0
+José Sá,Wolves,ENG-Premier League,2025/26,GK,32.0,2070,6.83,7.09,7.0,0,1,1
+Adrian Bernabe,Parma,ITA-Serie A,2025/26,MF,24.0,2470,7.03,7.01,7.02,1,0,1
+Ritsu Doan,Freiburg,GER-Bundesliga,2024/25,MF,26.0,2862,7.17,7.1,7.06,1,1,1
+Daichi Kamada,Crystal Palace,ENG-Premier League,2024/25,MF,27.0,1564,6.75,6.73,6.76,0,0,0
+Benjamín Domínguez,Bologna,ITA-Serie A,2025/26,MF,21.0,547,6.46,6.57,6.63,0,0,0
+Romain Del Castillo,Brest,FRA-Ligue 1,2025/26,"MF,FW",29.0,2625,6.82,7.1,7.08,0,1,1
+Dayot Upamecano,Bayern Munich,GER-Bundesliga,2025/26,DF,26.0,1794,7.16,7.01,6.94,1,0,0
+Max Rosenfelder,Freiburg,GER-Bundesliga,2024/25,DF,21.0,1249,6.68,6.81,6.8,0,0,0
+Baptiste Santamaria,Valencia,ESP-La Liga,2025/26,MF,30.0,754,6.83,6.78,6.74,0,0,0
+Gavi,Barcelona,ESP-La Liga,2024/25,MF,19.0,1085,6.92,6.88,6.84,0,0,0
+Pablo Marín,Real Sociedad,ESP-La Liga,2024/25,MF,21.0,1239,6.76,6.74,6.77,0,0,0
+Suat Serdar,Hellas Verona,ITA-Serie A,2025/26,MF,28.0,1108,6.72,6.75,6.79,0,0,0
+James Bree,Southampton,ENG-Premier League,2024/25,"DF,MF",26.0,1075,6.62,6.73,6.76,0,0,0
+Maximilian Beier,Dortmund,GER-Bundesliga,2024/25,"MF,FW",21.0,1591,6.92,6.9,6.87,0,0,0
+Clément Akpa,Auxerre,FRA-Ligue 1,2025/26,DF,23.0,1944,6.7,6.83,6.84,0,0,0
+Mario Lemina,Wolves,ENG-Premier League,2024/25,"MF,DF",30.0,1364,7.01,6.91,6.83,1,0,0
+Evann Guessand,Nice,FRA-Ligue 1,2024/25,"MF,FW",23.0,2565,7.23,7.13,7.11,1,1,1
+Harrison Armstrong,Everton,ENG-Premier League,2025/26,MF,18.0,529,6.64,6.65,6.67,0,0,0
+Benjamin Bouchouari,Saint-Étienne,FRA-Ligue 1,2024/25,MF,22.0,1772,6.8,6.81,6.8,0,0,0
+Michael Gregoritsch,Freiburg,GER-Bundesliga,2024/25,FW,30.0,639,6.66,6.6,6.61,0,0,0
+Hugo Bolin,Gladbach,GER-Bundesliga,2025/26,"MF,FW",22.0,550,6.7,6.65,6.65,0,0,0
+Merlin Röhl,Freiburg,GER-Bundesliga,2024/25,MF,22.0,965,6.49,6.6,6.62,0,0,0
+Joan García,Barcelona,ESP-La Liga,2025/26,GK,24.0,2700,7.34,7.17,7.07,1,1,1
+Mamadou Sangare,Lens,FRA-Ligue 1,2025/26,MF,23.0,2323,7.11,7.15,7.07,1,1,1
+Nikola Vasilj,St Pauli,GER-Bundesliga,2025/26,GK,29.0,3060,7.09,7.1,7.09,1,1,1
+Philipp Lienhart,Freiburg,GER-Bundesliga,2024/25,DF,28.0,2770,6.88,6.95,6.96,0,0,0
+Cher Ndour,Fiorentina,ITA-Serie A,2025/26,MF,21.0,1876,6.69,6.74,6.74,0,0,0
+Sam Morsy,Ipswich Town,ENG-Premier League,2024/25,MF,32.0,2751,6.76,6.85,6.82,0,0,0
+Tim Skarke,Union Berlin,GER-Bundesliga,2025/26,"MF,FW",28.0,623,6.58,6.66,6.67,0,0,0
+Santiago Pierotti,Lecce,ITA-Serie A,2025/26,"MF,FW",24.0,2597,6.49,6.62,6.77,0,0,0
+Andrea Cambiaso,Juventus,ITA-Serie A,2024/25,"DF,MF",24.0,2221,7.0,7.02,6.98,1,1,0
+Arturo Calabresi,Pisa,ITA-Serie A,2025/26,DF,29.0,1514,6.54,6.59,6.63,0,0,0
+Jakub Kamiński,Köln,GER-Bundesliga,2025/26,"MF,FW",23.0,3016,7.1,7.01,7.08,1,0,1
+Aleix Febas,Elche,ESP-La Liga,2025/26,MF,29.0,3160,7.16,7.02,7.06,1,0,1
+Donyell Malen,Dortmund,GER-Bundesliga,2024/25,MF,25.0,614,6.72,6.65,6.65,0,0,0
+Sam Johnstone,Wolves,ENG-Premier League,2024/25,GK,31.0,630,6.84,6.78,6.87,0,0,0
+Antoine Makoumbou,Cagliari,ITA-Serie A,2024/25,MF,26.0,2150,6.65,6.74,6.78,0,0,0
+Jadon Sancho,Chelsea,ENG-Premier League,2024/25,MF,24.0,1764,6.96,6.9,6.97,0,0,0
+Abdoulaye Touré,Le Havre,FRA-Ligue 1,2024/25,MF,30.0,2324,7.08,7.06,7.03,1,1,1
+Ezequiél Fernández,Leverkusen,GER-Bundesliga,2025/26,MF,23.0,984,6.8,6.85,6.77,0,0,0
+Igor Thiago,Brentford,ENG-Premier League,2025/26,FW,24.0,3282,6.92,7.34,6.93,0,1,0
+Pierre Kalulu,Juventus,ITA-Serie A,2025/26,"DF,MF",25.0,3281,6.91,7.13,7.18,0,1,1
+Mario Hermoso,Roma,ITA-Serie A,2025/26,DF,30.0,2085,6.93,6.94,6.9,0,0,0
+Adam Marušić,Lazio,ITA-Serie A,2025/26,DF,32.0,2778,6.67,6.86,6.82,0,0,0
+Adrià Pedrosa,Sevilla,ESP-La Liga,2024/25,DF,26.0,2298,6.85,6.77,6.79,0,0,0
+Marcus Rashford,Barcelona,ESP-La Liga,2025/26,"MF,FW",27.0,1763,6.84,7.13,7.06,0,1,1
+Valentino Lazaro,Torino,ITA-Serie A,2025/26,MF,29.0,2252,6.78,6.8,6.78,0,0,0
+Patson Daka,Leicester City,ENG-Premier League,2024/25,"MF,FW",25.0,736,6.6,6.55,6.59,0,0,0
+Francesco Zampano,Venezia,ITA-Serie A,2024/25,MF,30.0,1639,6.6,6.65,6.66,0,0,0
+Dani Raba,Leganés,ESP-La Liga,2024/25,"MF,FW",28.0,1879,7.23,7.08,7.0,1,1,0
+Juanmi Latasa,Valladolid,ESP-La Liga,2024/25,FW,23.0,1398,6.69,6.6,6.72,0,0,0
+Marko Dmitrović,Espanyol,ESP-La Liga,2025/26,GK,33.0,3330,7.13,6.91,7.02,1,0,1
+Marc Aguado,Elche,ESP-La Liga,2025/26,MF,25.0,2500,6.81,6.83,6.86,0,0,0
+Axel Witsel,Atlético Madrid,ESP-La Liga,2024/25,DF,35.0,852,7.02,6.84,6.89,1,0,0
+Frank Onyeka,Augsburg,GER-Bundesliga,2024/25,MF,26.0,2586,6.4,6.14,6.13,0,0,0
+Mason Greenwood,Marseille,FRA-Ligue 1,2024/25,"MF,FW",22.0,2804,7.56,7.56,7.36,1,1,1
+Ander Guevara,Alavés,ESP-La Liga,2024/25,MF,27.0,1947,6.68,6.7,6.71,0,0,0
+Alessio Zerbin,Venezia,ITA-Serie A,2024/25,MF,25.0,1518,6.87,6.76,6.79,0,0,0
+Hamari Traoré,Real Sociedad,ESP-La Liga,2024/25,DF,32.0,700,6.81,6.72,6.69,0,0,0
+Ryan Sessegnon,Fulham,ENG-Premier League,2025/26,"DF,MF",25.0,1823,6.57,6.78,6.78,0,0,0
+Iker Muñoz,Osasuna,ESP-La Liga,2024/25,MF,21.0,610,6.63,6.67,6.62,0,0,0
+Carl Starfelt,Celta Vigo,ESP-La Liga,2024/25,DF,29.0,2270,6.97,6.97,6.91,0,0,0
+Joshua King,Fulham,ENG-Premier League,2025/26,MF,18.0,1308,6.61,6.64,6.76,0,0,0
+Yarek Gasiorowski,Valencia,ESP-La Liga,2024/25,DF,19.0,947,6.82,6.75,6.85,0,0,0
+Guillaume Restes,Toulouse,FRA-Ligue 1,2025/26,GK,20.0,2939,6.78,6.95,7.07,0,0,1
+Corentin Tolisso,Lyon,FRA-Ligue 1,2025/26,MF,30.0,2302,7.15,7.26,7.07,1,1,1
+Nicolás Paz,Como,ITA-Serie A,2024/25,"MF,FW",19.0,2687,7.23,7.2,7.16,1,1,1
+Alexander Prass,Hoffenheim,GER-Bundesliga,2024/25,"MF,DF",23.0,1566,6.83,6.84,6.77,0,0,0
+Junya Itō,Reims,FRA-Ligue 1,2024/25,"MF,FW",31.0,2690,7.08,7.01,7.04,1,0,1
+Pape Matar Sarr,Tottenham,ENG-Premier League,2025/26,MF,22.0,1398,6.79,6.85,6.79,0,0,0
+Bernd Leno,Fulham,ENG-Premier League,2024/25,GK,32.0,3420,6.98,7.14,7.1,0,1,1
+Lameck Banda,Lecce,ITA-Serie A,2025/26,"MF,FW",24.0,1752,6.77,6.85,6.81,0,0,0
+Nicolò Barella,Inter,ITA-Serie A,2024/25,MF,27.0,2493,7.19,7.15,7.06,1,1,1
+Rodrigo Riquelme,Atlético Madrid,ESP-La Liga,2024/25,"MF,DF",24.0,516,6.71,6.71,6.7,0,0,0
+Aimen Moueffek,Saint-Étienne,FRA-Ligue 1,2024/25,MF,23.0,1039,6.63,6.67,6.64,0,0,0
+Sergi Altimira,Real Betis,ESP-La Liga,2025/26,MF,23.0,1186,6.97,6.95,6.93,0,0,0
+İlkay Gündoğan,Manchester City,ENG-Premier League,2024/25,MF,33.0,2223,7.08,7.07,7.02,1,1,1
+Takumi Minamino,Monaco,FRA-Ligue 1,2025/26,MF,30.0,944,6.61,6.69,6.69,0,0,0
+Yann Karamoh,Torino,ITA-Serie A,2024/25,"MF,FW",26.0,1046,6.54,6.53,6.6,0,0,0
+Pavel Šulc,Lyon,FRA-Ligue 1,2025/26,"FW,MF",24.0,1566,6.88,6.98,6.93,0,0,0
+Elif Elmas,Napoli,ITA-Serie A,2025/26,"MF,FW",25.0,1783,6.72,6.75,6.84,0,0,0
+Álex Moreno,Nottingham,ENG-Premier League,2024/25,DF,31.0,955,6.71,6.65,6.64,0,0,0
+Manor Solomon,Fiorentina,ITA-Serie A,2025/26,"FW,MF",26.0,890,6.82,6.64,6.75,0,0,0
+Rafael Leão,Milan,ITA-Serie A,2025/26,FW,26.0,1851,6.91,7.03,7.06,0,1,1
+Anastasios Douvikas,Celta Vigo,ESP-La Liga,2024/25,FW,24.0,700,6.64,6.69,6.69,0,0,0
+Sebastiano Luperto,Cagliari,ITA-Serie A,2024/25,DF,27.0,3240,6.82,6.84,6.9,0,0,0
+Eren Dinkçi,Heidenheim,GER-Bundesliga,2025/26,"MF,FW",23.0,1131,6.79,6.67,6.69,0,0,0
+Jake O'Brien,Everton,ENG-Premier League,2024/25,DF,23.0,1571,6.92,6.73,6.78,0,0,0
+Reinildo Mandava,Atlético Madrid,ESP-La Liga,2024/25,"DF,MF",30.0,941,6.67,6.67,6.7,0,0,0
+Sam Beukema,Napoli,ITA-Serie A,2025/26,DF,26.0,1681,6.82,6.86,6.94,0,0,0
+Yoel Lago,Celta Vigo,ESP-La Liga,2024/25,DF,20.0,583,6.65,6.68,6.65,0,0,0
+Rodrygo,Real Madrid,ESP-La Liga,2025/26,"MF,FW",24.0,684,6.92,6.9,6.92,0,0,0
+Odilon Kossounou,Atalanta,ITA-Serie A,2024/25,DF,23.0,1125,6.72,6.66,6.71,0,0,0
+Matt Doherty,Wolves,ENG-Premier League,2025/26,"DF,MF",33.0,787,6.55,6.66,6.69,0,0,0
+Achraf Hakimi,PSG,FRA-Ligue 1,2024/25,DF,25.0,2066,7.76,7.39,7.37,1,1,1
+Liberato Cacace,Empoli,ITA-Serie A,2024/25,"MF,DF",23.0,2230,6.73,6.74,6.79,0,0,0
+Borja Mayoral,Getafe,ESP-La Liga,2024/25,FW,27.0,1114,6.75,6.69,6.69,0,0,0
+Juan Cuadrado,Atalanta,ITA-Serie A,2024/25,"MF,FW",36.0,832,7.0,6.94,6.9,0,0,0
+Ángel Ortíz,Real Betis,ESP-La Liga,2025/26,DF,21.0,584,6.74,6.68,6.72,0,0,0
+Diego Moreira,Strasbourg,FRA-Ligue 1,2025/26,MF,20.0,2034,7.0,7.08,7.03,1,1,1
+Roony Bardghji,Barcelona,ESP-La Liga,2025/26,"MF,FW",19.0,648,6.69,6.77,6.81,0,0,0
+Kiernan Dewsbury-Hall,Everton,ENG-Premier League,2025/26,MF,26.0,2626,7.16,7.11,7.1,1,1,1
+Lucas Chevalier,PSG,FRA-Ligue 1,2025/26,GK,23.0,1530,6.95,7.13,7.02,0,1,1
+Benjamin Lecomte,Montpellier,FRA-Ligue 1,2024/25,GK,33.0,2700,6.94,7.09,6.99,0,1,1
+Joseph Aidoo,Celta Vigo,ESP-La Liga,2025/26,DF,29.0,639,6.32,6.72,6.67,0,0,0
+Joshua Kimmich,Bayern Munich,GER-Bundesliga,2024/25,MF,29.0,2847,7.91,7.8,7.51,1,1,1
+Luis Rioja,Valencia,ESP-La Liga,2025/26,MF,31.0,2624,6.82,6.84,6.9,0,0,0
+Theo Hernández,Milan,ITA-Serie A,2024/25,"DF,MF",26.0,2696,7.2,7.16,7.11,1,1,1
+Jonathan Bamba,Celta Vigo,ESP-La Liga,2024/25,"MF,FW",28.0,811,6.84,6.74,6.74,0,0,0
+Yeray Álvarez,Athletic Club,ESP-La Liga,2024/25,DF,29.0,1781,7.1,6.87,6.84,1,0,0
+Désiré Doué,PSG,FRA-Ligue 1,2025/26,"FW,MF",20.0,1348,7.13,7.12,7.06,1,1,0
+Jorge Herrando,Osasuna,ESP-La Liga,2025/26,DF,24.0,1600,6.68,6.74,6.76,0,0,0
+Jean Butez,Como,ITA-Serie A,2024/25,GK,29.0,1666,7.06,6.94,6.97,1,0,0
+Ernest Poku,Leverkusen,GER-Bundesliga,2025/26,MF,21.0,1482,6.84,6.86,6.82,0,0,0
+Óscar Valentín,Rayo Vallecano,ESP-La Liga,2025/26,MF,30.0,2108,6.88,6.79,6.8,0,0,0
+Gustav Isaksen,Lazio,ITA-Serie A,2024/25,MF,23.0,2210,6.88,6.87,6.9,0,0,0
+Mohammed Kudus,West Ham,ENG-Premier League,2024/25,"MF,FW",23.0,2590,6.82,6.87,6.95,0,0,0
+Antonio Nusa,RB Leipzig,GER-Bundesliga,2025/26,"FW,MF",20.0,2027,7.07,6.93,7.02,1,0,1
+Þórir Jóhann Helgason,Lecce,ITA-Serie A,2024/25,MF,23.0,1156,6.82,6.66,6.73,0,0,0
+Johan Vásquez,Genoa,ITA-Serie A,2025/26,DF,26.0,3215,6.79,6.96,6.99,0,0,0
+Loïc Nego,Le Havre,FRA-Ligue 1,2024/25,"DF,MF",33.0,2459,6.73,6.75,6.84,0,0,0
+Harry Maguire,Manchester Utd,ENG-Premier League,2024/25,DF,31.0,1758,6.91,6.87,7.01,0,0,0
+Gregor Kobel,Dortmund,GER-Bundesliga,2025/26,GK,27.0,3060,7.14,6.93,7.03,1,0,0
+Diego Moreira,Strasbourg,FRA-Ligue 1,2024/25,"MF,DF",19.0,2568,7.04,7.02,7.06,1,1,1
+Luca Koleosho,Paris,FRA-Ligue 1,2025/26,MF,20.0,554,6.6,6.73,6.61,0,0,0
+Casper Tengstedt,Hellas Verona,ITA-Serie A,2024/25,FW,24.0,1517,6.78,6.7,6.7,0,0,0
+Noussair Mazraoui,Manchester Utd,ENG-Premier League,2024/25,"DF,MF",26.0,2838,6.97,6.95,6.94,0,0,0
+Augusto Batalla,Rayo Vallecano,ESP-La Liga,2025/26,GK,29.0,3060,6.98,6.95,7.03,0,0,1
+Eric Dier,Monaco,FRA-Ligue 1,2025/26,DF,31.0,688,7.0,6.7,6.62,1,0,0
+Mario Gila,Lazio,ITA-Serie A,2025/26,DF,24.0,2472,7.19,6.98,6.97,1,0,0
+Adam Obert,Cagliari,ITA-Serie A,2024/25,"DF,MF",21.0,1077,6.7,6.71,6.66,0,0,0
+Thomas Lemar,Girona,ESP-La Liga,2025/26,MF,29.0,1258,6.74,6.85,6.78,0,0,0
+Ferran Torres,Barcelona,ESP-La Liga,2024/25,"FW,MF",24.0,1106,7.08,7.09,6.99,1,1,0
+Sofiane Boufal,Le Havre,FRA-Ligue 1,2025/26,"MF,FW",31.0,1019,6.84,6.91,6.87,0,0,0
+Sinaly Diomande,Auxerre,FRA-Ligue 1,2025/26,DF,24.0,2131,6.9,6.82,6.91,0,0,0
+Flavius Daniliuc,Hellas Verona,ITA-Serie A,2024/25,DF,23.0,1004,6.58,6.64,6.66,0,0,0
+Mohamed Salah,Liverpool,ENG-Premier League,2025/26,MF,33.0,2146,6.91,6.98,6.97,0,0,0
+Kyle Walker,Burnley,ENG-Premier League,2025/26,"DF,MF",35.0,3096,6.61,6.78,6.78,0,0,0
+Martín Zubimendi,Real Sociedad,ESP-La Liga,2024/25,MF,25.0,2962,7.02,6.95,7.02,1,0,0
+Piotr Zieliński,Inter,ITA-Serie A,2025/26,MF,31.0,2045,7.11,7.24,7.15,1,1,1
+Giorgos Masouras,Bochum,GER-Bundesliga,2024/25,FW,30.0,1055,6.82,6.69,6.72,0,0,0
+Toni Lato,Mallorca,ESP-La Liga,2025/26,"DF,MF",27.0,583,6.6,6.64,6.6,0,0,0
+Omari Hutchinson,Nottingham,ENG-Premier League,2025/26,MF,21.0,1688,6.74,6.81,6.92,0,0,0
+Yéremy Pino,Villarreal,ESP-La Liga,2024/25,MF,21.0,1934,6.94,6.97,6.97,0,0,0
+Eric García,Barcelona,ESP-La Liga,2024/25,"DF,MF",23.0,1566,6.99,6.96,7.04,0,0,0
+Guglielmo Vicario,Tottenham,ENG-Premier League,2025/26,GK,28.0,2790,6.85,7.02,7.05,0,1,1
+Benedikt Pichler,Holstein Kiel,GER-Bundesliga,2024/25,FW,27.0,785,6.82,6.69,6.71,0,0,0
+Nick Pope,Newcastle,ENG-Premier League,2025/26,GK,33.0,2416,6.9,6.95,7.0,0,0,1
+Carmona,Sevilla,ESP-La Liga,2024/25,DF,22.0,2942,6.88,6.88,6.95,0,0,0
+Dimitri Foulquier,Valencia,ESP-La Liga,2025/26,DF,32.0,1150,6.38,6.65,6.66,0,0,0
+Lassine Sinayoko,Auxerre,FRA-Ligue 1,2024/25,"FW,MF",24.0,2299,6.97,6.92,6.88,0,0,0
+Lamine Yamal,Barcelona,ESP-La Liga,2024/25,"MF,FW",17.0,2856,7.79,7.52,7.58,1,1,1
+Ritsu Doan,Frankfurt,GER-Bundesliga,2025/26,MF,27.0,2364,6.85,6.98,6.97,0,0,1
+Neal Maupay,Sevilla,ESP-La Liga,2025/26,FW,28.0,865,6.66,6.62,6.66,0,0,0
+Ramy Bensebaini,Dortmund,GER-Bundesliga,2024/25,DF,29.0,2022,7.03,7.03,6.96,1,1,0
+Brahim Díaz,Real Madrid,ESP-La Liga,2025/26,"FW,MF",25.0,1257,6.72,6.88,6.92,0,0,0
+Florian Grillitsch,Valladolid,ESP-La Liga,2024/25,MF,28.0,623,6.78,6.75,6.73,0,0,0
+Arnaud Nordin,Montpellier,FRA-Ligue 1,2024/25,"MF,FW",26.0,1166,6.68,6.64,6.62,0,0,0
+Jeremie Boga,Juventus,ITA-Serie A,2025/26,"MF,FW",28.0,679,7.07,6.79,6.85,1,0,0
+Isco,Real Betis,ESP-La Liga,2024/25,MF,32.0,1547,7.54,7.3,7.24,1,1,1
+Stefan Lainer,Gladbach,GER-Bundesliga,2024/25,DF,31.0,757,6.67,6.76,6.75,0,0,0
+David Raya,Arsenal,ENG-Premier League,2025/26,GK,29.0,3330,6.9,7.08,7.06,0,1,1
+Endrick,Lyon,FRA-Ligue 1,2025/26,"FW,MF",19.0,1215,6.7,6.83,6.84,0,0,1
+Nikolas Veratschnig,Mainz 05,GER-Bundesliga,2025/26,"MF,DF",22.0,660,6.61,6.7,6.67,0,0,0
+Jack Taylor,Ipswich Town,ENG-Premier League,2024/25,MF,26.0,860,6.63,6.72,6.62,0,0,0
+Willy Kambwala,Villarreal,ESP-La Liga,2024/25,DF,19.0,1117,6.61,6.71,6.73,0,0,0
+Kervin Arriaga,Levante,ESP-La Liga,2025/26,MF,27.0,1532,6.94,6.9,6.87,0,0,0
+Semih Kılıçsoy,Cagliari,ITA-Serie A,2025/26,FW,19.0,975,6.58,6.66,6.71,0,0,0
+Sebastian Szymański,Rennes,FRA-Ligue 1,2025/26,MF,26.0,776,6.82,6.85,6.86,0,0,0
+Leonardo Spinazzola,Napoli,ITA-Serie A,2024/25,"DF,MF",31.0,1517,6.84,6.84,6.92,0,0,0
+Gerard Martín,Barcelona,ESP-La Liga,2024/25,DF,22.0,1038,6.81,6.85,6.83,0,0,0
+Álex Baena,Villarreal,ESP-La Liga,2024/25,"MF,FW",23.0,2595,7.48,7.29,7.21,1,1,1
+Borja Mayoral,Getafe,ESP-La Liga,2025/26,FW,28.0,1058,6.65,6.65,6.68,0,0,0
+Dimitris Giannoulis,Augsburg,GER-Bundesliga,2024/25,MF,28.0,2650,6.97,6.91,6.92,0,0,0
+Davinchi,Getafe,ESP-La Liga,2025/26,DF,17.0,700,6.39,6.56,6.6,0,0,0
+Christian Günter,Freiburg,GER-Bundesliga,2025/26,DF,32.0,1547,6.57,6.72,6.74,0,0,0
+Denis Zakaria,Monaco,FRA-Ligue 1,2025/26,"DF,MF",28.0,2031,6.83,6.85,6.94,0,0,0
+Gerard Gumbau,Rayo Vallecano,ESP-La Liga,2024/25,MF,29.0,849,6.73,6.73,6.74,0,0,0
+Oihan Sancet,Athletic Club,ESP-La Liga,2024/25,MF,24.0,1620,7.04,7.07,6.9,1,1,0
+Lovro Majer,Wolfsburg,GER-Bundesliga,2025/26,MF,27.0,1371,6.63,6.8,6.78,0,0,0
+Senny Mayulu,PSG,FRA-Ligue 1,2025/26,"MF,FW",19.0,1672,6.8,7.01,6.99,0,0,0
+Pedro Porro,Tottenham,ENG-Premier League,2024/25,DF,24.0,2610,7.19,7.11,7.0,1,1,1
+Kaïl Boudache,Nice,FRA-Ligue 1,2025/26,"MF,FW",19.0,531,6.56,6.57,6.58,0,0,0
+Jude Bellingham,Real Madrid,ESP-La Liga,2025/26,MF,22.0,1916,7.26,7.19,7.12,1,1,1
+Djibril Sow,Sevilla,ESP-La Liga,2025/26,MF,28.0,2187,6.79,6.95,6.98,0,0,0
+Matthis Abline,Nantes,FRA-Ligue 1,2025/26,"FW,MF",22.0,2494,6.96,6.81,6.84,0,0,0
+Jacen Russell-Rowe,Toulouse,FRA-Ligue 1,2025/26,FW,22.0,472,6.44,6.53,6.55,0,0,0
+Jesus Vazquez,Valencia,ESP-La Liga,2025/26,"DF,MF",22.0,974,6.65,6.71,6.73,0,0,0
+Trent Alexander-Arnold,Liverpool,ENG-Premier League,2024/25,DF,25.0,2365,7.25,7.19,7.18,1,1,1
+Marius Bülter,Hoffenheim,GER-Bundesliga,2024/25,"MF,FW",31.0,1729,7.03,6.93,6.9,1,0,0
+Tom Krauß,Bochum,GER-Bundesliga,2024/25,MF,23.0,1077,6.98,6.78,6.75,0,0,0
+Jean-Philippe Krasso,Paris,FRA-Ligue 1,2025/26,FW,28.0,1092,6.59,6.71,6.68,0,0,0
+Florent Hanin,Angers,FRA-Ligue 1,2025/26,"DF,MF",35.0,865,6.65,6.68,6.67,0,0,0
+Joelinton,Newcastle,ENG-Premier League,2025/26,MF,28.0,1951,6.79,6.84,6.83,0,0,0
+Arnau Martinez,Girona,ESP-La Liga,2024/25,"DF,MF",21.0,2624,6.93,6.98,7.01,0,0,0
+Aritz Elustondo,Real Sociedad,ESP-La Liga,2025/26,DF,31.0,720,6.48,6.63,6.64,0,0,0
+Alex Sola,Getafe,ESP-La Liga,2024/25,MF,25.0,1029,6.53,6.58,6.64,0,0,0
+Virgil van Dijk,Liverpool,ENG-Premier League,2025/26,DF,34.0,3420,7.26,7.41,7.26,1,1,1
+Aurélio Buta,Reims,FRA-Ligue 1,2024/25,DF,27.0,1970,6.76,6.72,6.72,0,0,0
+Jonas Wind,Wolfsburg,GER-Bundesliga,2024/25,"FW,MF",25.0,1966,7.14,7.0,6.97,1,0,0
+Christian Kouamé,Fiorentina,ITA-Serie A,2024/25,"MF,FW",26.0,622,6.84,6.74,6.8,0,0,0
+Stefan Schimmer,Heidenheim,GER-Bundesliga,2025/26,FW,31.0,820,6.62,6.78,6.72,0,0,0
+Luca Ranieri,Fiorentina,ITA-Serie A,2024/25,DF,25.0,3071,6.96,6.94,6.87,0,0,0
+Álvaro Vallés,Real Betis,ESP-La Liga,2025/26,GK,28.0,2520,6.97,7.0,6.99,0,1,1
+Richarlison,Tottenham,ENG-Premier League,2025/26,"FW,MF",28.0,1964,6.85,6.96,6.87,0,0,0
+Hugo Duro,Valencia,ESP-La Liga,2025/26,FW,25.0,1979,6.64,6.78,6.8,0,0,0
+Federico Valverde,Real Madrid,ESP-La Liga,2024/25,"MF,DF",26.0,3032,7.47,7.41,7.24,1,1,1
+Serhou Guirassy,Dortmund,GER-Bundesliga,2025/26,FW,29.0,2337,6.83,7.02,6.91,0,1,0
+Emil Audero,Como,ITA-Serie A,2024/25,GK,27.0,720,6.5,6.93,6.84,0,0,0
+Jonathan Tah,Bayern Munich,GER-Bundesliga,2025/26,DF,29.0,2018,7.24,7.1,7.02,1,1,0
+Iván Martín,Girona,ESP-La Liga,2024/25,MF,25.0,2039,6.79,6.82,6.88,0,0,0
+Largie Ramazani,Valencia,ESP-La Liga,2025/26,"MF,FW",24.0,1234,6.8,6.81,6.73,0,0,0
+Robert Skov,Union Berlin,GER-Bundesliga,2024/25,"MF,DF",28.0,852,6.84,6.83,6.79,0,0,0
+Kike Pérez,Valladolid,ESP-La Liga,2024/25,MF,27.0,1191,6.83,6.78,6.77,0,0,0
+Pablo Marín,Real Sociedad,ESP-La Liga,2025/26,MF,22.0,1502,6.48,6.58,6.66,0,0,0
+Kingsley Ehizibue,Udinese,ITA-Serie A,2025/26,"MF,DF",30.0,1811,6.67,6.69,6.67,0,0,0
+Rodrigo Riquelme,Real Betis,ESP-La Liga,2025/26,MF,25.0,821,6.6,6.68,6.66,0,0,0
+Francisco Perez,Valencia,ESP-La Liga,2024/25,MF,21.0,570,6.6,6.76,6.69,0,0,0
+Leon Bailey,Aston Villa,ENG-Premier League,2024/25,MF,26.0,1139,6.75,6.68,6.71,0,0,0
+Tomáš Souček,West Ham,ENG-Premier League,2024/25,MF,29.0,2567,7.02,6.94,6.94,1,0,0
+Marvin Pieringer,Heidenheim,GER-Bundesliga,2025/26,"FW,MF",25.0,1650,6.71,6.72,6.76,0,0,0
+Vitaliy Mykolenko,Everton,ENG-Premier League,2024/25,DF,25.0,3082,6.99,6.82,6.88,0,0,0
+Ivan Provedel,Lazio,ITA-Serie A,2025/26,GK,31.0,2430,7.18,7.04,7.0,1,1,1
+Shavy Babicka,Toulouse,FRA-Ligue 1,2024/25,MF,24.0,1186,6.71,6.75,6.73,0,0,0
+Davide Frattesi,Inter,ITA-Serie A,2024/25,MF,24.0,1225,6.83,6.84,6.82,0,0,0
+Maximilian Beier,Dortmund,GER-Bundesliga,2025/26,"MF,FW",22.0,2026,6.8,6.96,6.91,0,0,0
+Kike Salas,Sevilla,ESP-La Liga,2024/25,DF,22.0,2238,6.95,6.97,6.98,0,0,0
+Rayan Cherki,Lyon,FRA-Ligue 1,2024/25,"MF,FW",20.0,2041,7.6,7.35,7.1,1,1,1
+El Hadji Malick Diouf,West Ham,ENG-Premier League,2025/26,"DF,MF",20.0,2707,6.72,6.82,6.81,0,0,0
+Florian Müller,Freiburg,GER-Bundesliga,2024/25,GK,26.0,753,6.56,6.98,6.86,0,0,0
+Pep Chavarría,Rayo Vallecano,ESP-La Liga,2024/25,DF,26.0,2585,6.91,6.82,6.79,0,0,0
+Rodrigo De Paul,Atlético Madrid,ESP-La Liga,2024/25,MF,30.0,2106,7.11,7.16,7.09,1,1,1
+Valentín Castellanos,West Ham,ENG-Premier League,2025/26,FW,26.0,1384,6.89,6.75,6.81,0,0,0
+Florian Neuhaus,Gladbach,GER-Bundesliga,2025/26,"MF,FW",28.0,930,6.7,6.66,6.65,0,0,0
+Nico O'Reilly,Manchester City,ENG-Premier League,2025/26,"DF,MF",20.0,2646,6.87,7.01,7.02,0,1,0
+Ilias Akhomach,Rayo Vallecano,ESP-La Liga,2025/26,"MF,FW",21.0,709,6.64,6.68,6.75,0,0,0
+Unai Elgezabal,Levante,ESP-La Liga,2025/26,"DF,MF",32.0,958,6.68,6.64,6.76,0,0,0
+Alan Matturro,Levante,ESP-La Liga,2025/26,DF,20.0,947,6.52,6.78,6.8,0,0,0
+Joël Veltman,Brighton,ENG-Premier League,2025/26,DF,33.0,1058,6.82,6.8,6.85,0,0,0
+Ayoze Pérez,Villarreal,ESP-La Liga,2025/26,FW,32.0,1124,6.78,6.81,6.75,0,0,0
+Lucas Chevalier,Lille,FRA-Ligue 1,2024/25,GK,22.0,3060,7.09,7.07,7.11,1,1,1
+Oumar Solet,Udinese,ITA-Serie A,2024/25,DF,24.0,1672,7.23,6.94,6.88,1,0,0
+Jérémy Jacquet,Rennes,FRA-Ligue 1,2024/25,DF,19.0,927,7.15,6.82,6.81,1,0,0
+Thiago Fernández,Oviedo,ESP-La Liga,2025/26,"MF,FW",21.0,817,6.64,6.7,6.71,0,0,0
+Joan Jordán,Alavés,ESP-La Liga,2024/25,MF,30.0,1414,7.06,6.99,6.96,1,0,0
+Leroy Sané,Bayern Munich,GER-Bundesliga,2024/25,MF,28.0,1637,7.18,7.29,7.17,1,1,1
+Joe Willock,Newcastle,ENG-Premier League,2025/26,MF,25.0,983,6.56,6.73,6.7,0,0,0
+Patrick Osterhage,Freiburg,GER-Bundesliga,2025/26,MF,25.0,1189,6.65,6.63,6.66,0,0,0
+Adnan Januzaj,Las Palmas,ESP-La Liga,2024/25,"MF,FW",29.0,598,6.94,6.81,6.84,0,0,0
+Dan Ndoye,Bologna,ITA-Serie A,2024/25,"MF,FW",23.0,2143,7.12,7.0,7.04,1,0,1
+Luca Philipp,Hoffenheim,GER-Bundesliga,2024/25,GK,23.0,540,6.87,6.98,6.89,0,0,0
+Rudy Matondo,Paris,FRA-Ligue 1,2025/26,MF,17.0,743,6.67,6.79,6.75,0,0,0
+Ezequiel Ávila,Real Betis,ESP-La Liga,2024/25,"MF,FW",30.0,677,6.82,6.79,6.79,0,0,0
+Christian Mawissa,Monaco,FRA-Ligue 1,2024/25,DF,19.0,1501,6.66,6.74,6.77,0,0,0
+Ludovic Blas,Rennes,FRA-Ligue 1,2024/25,"MF,FW",26.0,2293,7.2,7.06,6.99,1,1,1
+Pierrick Capelle,Angers,FRA-Ligue 1,2025/26,MF,38.0,651,6.57,6.69,6.62,0,0,0
+Rayan,Bournemouth,ENG-Premier League,2025/26,MF,18.0,1111,7.03,6.82,6.74,1,0,0
+Josep Martinez,Inter,ITA-Serie A,2024/25,GK,26.0,450,7.26,7.2,7.03,1,1,0
+Lilian Raolisoa,Angers,FRA-Ligue 1,2025/26,"MF,DF",25.0,1966,6.82,6.86,6.83,0,0,0
+Omar Mascarell,Mallorca,ESP-La Liga,2025/26,"MF,DF",32.0,2239,6.85,6.85,6.8,0,0,0
+Marten de Roon,Atalanta,ITA-Serie A,2025/26,MF,34.0,2691,7.03,7.01,6.88,1,0,0
+Federico Valverde,Real Madrid,ESP-La Liga,2025/26,"MF,DF",27.0,2740,7.29,7.37,7.18,1,1,1
+Reiss Nelson,Fulham,ENG-Premier League,2024/25,MF,24.0,487,7.05,6.75,6.76,1,0,0
+Cedric Zesiger,Wolfsburg,GER-Bundesliga,2024/25,DF,26.0,522,6.93,6.88,6.71,0,0,0
+Keita Baldé,Monza,ITA-Serie A,2024/25,FW,29.0,638,6.78,6.7,6.69,0,0,0
+Ronald Araújo,Barcelona,ESP-La Liga,2025/26,DF,26.0,1071,6.95,6.88,6.91,0,0,0
+Unai Gómez,Athletic Club,ESP-La Liga,2025/26,MF,22.0,936,6.5,6.58,6.61,0,0,0
+Sergi Roberto,Como,ITA-Serie A,2025/26,MF,33.0,544,6.62,6.74,6.65,0,0,0
+Jack Stephens,Southampton,ENG-Premier League,2024/25,DF,30.0,1389,6.73,6.76,6.78,0,0,0
+Morgan Sanson,Nice,FRA-Ligue 1,2025/26,MF,30.0,1772,6.58,6.69,6.7,0,0,0
+Christian Pulisic,Milan,ITA-Serie A,2024/25,"MF,FW",25.0,2478,7.28,7.23,7.29,1,1,1
+Pablo Marí,Monza,ITA-Serie A,2024/25,DF,30.0,1628,7.02,7.03,6.94,1,1,1
+Issa Soumaré,Le Havre,FRA-Ligue 1,2024/25,"MF,FW",23.0,1902,6.96,6.86,6.83,0,0,0
+Jake O'Brien,Everton,ENG-Premier League,2025/26,DF,24.0,3120,6.69,6.73,6.84,0,0,0
+John Stones,Manchester City,ENG-Premier League,2024/25,DF,30.0,548,6.88,6.86,6.83,0,0,0
+Théo De Percin,Auxerre,FRA-Ligue 1,2025/26,GK,24.0,598,6.94,6.75,6.91,0,0,0
+Jakub Kiwior,Arsenal,ENG-Premier League,2024/25,DF,24.0,1122,6.88,6.79,6.76,0,0,0
+George Hirst,Ipswich Town,ENG-Premier League,2024/25,FW,25.0,661,6.65,6.61,6.7,0,0,0
+Leny Yoro,Manchester Utd,ENG-Premier League,2025/26,DF,19.0,1740,6.66,6.76,6.8,0,0,0
+Tommy Doyle,Wolves,ENG-Premier League,2024/25,MF,22.0,488,6.67,6.72,6.7,0,0,0
+Konstantinos Mavropanos,West Ham,ENG-Premier League,2024/25,DF,26.0,2045,6.84,6.89,7.01,0,0,1
+Fares Chaïbi,Frankfurt,GER-Bundesliga,2025/26,MF,22.0,1792,6.83,7.01,7.0,0,0,0
+Willian Pacho,PSG,FRA-Ligue 1,2024/25,DF,22.0,2132,7.04,7.04,6.93,1,1,0
+Marc Guéhi,Crystal Palace,ENG-Premier League,2024/25,DF,24.0,3059,7.1,7.02,6.97,1,1,0
+Antoine Bernede,Hellas Verona,ITA-Serie A,2025/26,MF,26.0,2301,6.65,6.74,6.77,0,0,0
+Amad Diallo,Manchester Utd,ENG-Premier League,2025/26,MF,23.0,2341,6.89,6.94,7.0,0,0,1
+Antonio Sánchez,Mallorca,ESP-La Liga,2024/25,"MF,DF",27.0,1395,6.66,6.61,6.63,0,0,0
+Joe Willock,Newcastle,ENG-Premier League,2024/25,MF,24.0,1086,6.67,6.74,6.81,0,0,0
+Pablo Durán,Celta Vigo,ESP-La Liga,2024/25,"FW,MF",23.0,1394,6.81,6.75,6.71,0,0,0
+Eduardo Camavinga,Real Madrid,ESP-La Liga,2024/25,"MF,DF",21.0,1102,7.16,6.93,6.84,1,0,0
+Flynn Downes,Southampton,ENG-Premier League,2024/25,MF,25.0,2151,6.73,6.83,6.82,0,0,0
+Rubén Peña,Osasuna,ESP-La Liga,2024/25,"FW,DF",33.0,775,6.55,6.56,6.63,0,0,0
+Mika Mármol,Las Palmas,ESP-La Liga,2024/25,DF,23.0,2399,6.8,6.81,6.78,0,0,0
+Nicolò Fagioli,Juventus,ITA-Serie A,2024/25,MF,23.0,571,6.86,6.97,6.87,0,0,0
+Micky van de Ven,Tottenham,ENG-Premier League,2024/25,DF,23.0,1015,6.78,6.75,6.7,0,0,0
+Montassar Talbi,Lorient,FRA-Ligue 1,2025/26,DF,27.0,2610,6.9,6.88,6.84,0,0,0
+Kacper Urbanski,Monza,ITA-Serie A,2024/25,MF,19.0,500,6.77,6.67,6.65,0,0,0
+Danny da Costa,Mainz 05,GER-Bundesliga,2024/25,DF,31.0,2006,6.8,6.77,6.74,0,0,0
+Marco Grüll,Werder Bremen,GER-Bundesliga,2025/26,"MF,FW",27.0,2006,6.76,6.78,6.79,0,0,0
+Luca Marianucci,Empoli,ITA-Serie A,2024/25,DF,20.0,1069,6.76,6.7,6.69,0,0,0
+Phil Foden,Manchester City,ENG-Premier League,2024/25,"MF,FW",24.0,1777,7.24,7.06,7.04,1,1,1
+Amadou Koné,Reims,FRA-Ligue 1,2024/25,MF,19.0,1293,6.8,6.85,6.87,0,0,0
+Bertuğ Yıldırım,Getafe,ESP-La Liga,2024/25,FW,22.0,1083,6.73,6.56,6.66,0,0,0
+Osame Sahraoui,Lille,FRA-Ligue 1,2024/25,MF,23.0,1293,6.96,6.86,6.88,0,0,0
+Diego López,Valencia,ESP-La Liga,2024/25,MF,22.0,2737,6.79,6.89,6.94,0,0,0
+Marco Asensio,PSG,FRA-Ligue 1,2024/25,"FW,MF",28.0,618,7.11,6.74,6.9,1,0,0
+Leonardo Bittencourt,Werder Bremen,GER-Bundesliga,2024/25,MF,30.0,982,6.81,6.9,6.88,0,0,0
+Ansu Fati,Monaco,FRA-Ligue 1,2025/26,"MF,FW",22.0,1093,6.86,7.0,6.88,0,0,0
+Tyrick Mitchell,Crystal Palace,ENG-Premier League,2025/26,MF,25.0,3251,6.81,6.84,6.91,0,0,0
+Wesley Fofana,Chelsea,ENG-Premier League,2025/26,DF,24.0,1722,6.83,6.9,6.89,0,0,0
+Ander Barrenetxea,Real Sociedad,ESP-La Liga,2025/26,MF,23.0,1763,6.85,6.99,6.98,0,0,0
+Ronald Araújo,Barcelona,ESP-La Liga,2024/25,DF,25.0,754,7.1,6.82,6.81,1,0,0
+Louis Oppie,St Pauli,GER-Bundesliga,2025/26,MF,23.0,1620,6.57,6.72,6.72,0,0,0
+Cedric Zesiger,Augsburg,GER-Bundesliga,2025/26,DF,27.0,1816,6.69,6.75,6.75,0,0,0
+Marko Arnautović,Inter,ITA-Serie A,2024/25,FW,35.0,549,6.81,6.88,6.87,0,0,0
+Facundo Medina,Lens,FRA-Ligue 1,2024/25,DF,25.0,2543,6.97,6.93,6.88,0,0,0
+Diogo Leite,Union Berlin,GER-Bundesliga,2025/26,DF,26.0,1963,6.77,6.78,6.79,0,0,0
+Ibrahim Maza,Leverkusen,GER-Bundesliga,2025/26,MF,19.0,1849,7.1,6.99,7.06,1,1,1
+Filippo Terracciano,Milan,ITA-Serie A,2024/25,"DF,MF",21.0,539,6.62,6.62,6.69,0,0,0
+José Luis Gayà,Valencia,ESP-La Liga,2025/26,DF,30.0,2448,6.63,6.86,6.89,0,0,0
+M'Bala Nzola,Lens,FRA-Ligue 1,2024/25,FW,27.0,1460,6.64,6.68,6.72,0,0,0
+Raúl Jiménez,Fulham,ENG-Premier League,2024/25,FW,33.0,2494,7.05,7.02,7.0,1,1,0
+João Félix,Milan,ITA-Serie A,2024/25,MF,24.0,760,6.84,6.74,6.79,0,0,0
+André Ayew,Le Havre,FRA-Ligue 1,2024/25,FW,34.0,1453,6.74,6.67,6.72,0,0,0
+Kostas Tsimikas,Roma,ITA-Serie A,2025/26,MF,29.0,644,6.61,6.65,6.63,0,0,0
+Falaye Sacko,Montpellier,FRA-Ligue 1,2024/25,DF,29.0,1233,6.44,6.62,6.64,0,0,0
+Lukas Ullrich,Gladbach,GER-Bundesliga,2025/26,"DF,MF",21.0,1305,6.5,6.69,6.72,0,0,0
+Tommaso Pobega,Bologna,ITA-Serie A,2024/25,MF,25.0,1178,6.79,6.8,6.74,0,0,0
+Junior Firpo,Real Betis,ESP-La Liga,2025/26,DF,28.0,827,6.53,6.78,6.79,0,0,0
+Dušan Vlahović,Juventus,ITA-Serie A,2025/26,FW,25.0,968,6.73,6.81,6.74,0,0,0
+Claudio Echeverri,Girona,ESP-La Liga,2025/26,"FW,MF",19.0,624,6.72,6.72,6.76,0,0,0
+Bernardo Silva,Manchester City,ENG-Premier League,2025/26,MF,30.0,2872,6.85,7.1,7.2,0,1,1
+Ramón Terrats,Getafe,ESP-La Liga,2024/25,"MF,FW",23.0,1219,6.88,6.84,6.83,0,0,0
+Aleksandar Pavlovic,Bayern Munich,GER-Bundesliga,2024/25,MF,20.0,1451,7.14,7.01,6.95,1,0,0
+Antonio Rüdiger,Real Madrid,ESP-La Liga,2025/26,DF,32.0,1490,6.9,6.81,6.91,0,0,0
+Rodrigo Ribeiro,Augsburg,GER-Bundesliga,2025/26,FW,20.0,636,6.52,6.59,6.63,0,0,0
+Emanuele Valeri,Parma,ITA-Serie A,2024/25,"DF,MF",25.0,2873,6.83,6.83,6.89,0,0,0
+László Bénes,Union Berlin,GER-Bundesliga,2024/25,"MF,FW",26.0,589,6.76,6.7,6.66,0,0,0
+Melvin Bard,Nice,FRA-Ligue 1,2025/26,"DF,MF",24.0,2394,6.67,6.89,6.87,0,0,0
+Pablo Maffeo,Mallorca,ESP-La Liga,2025/26,DF,28.0,2662,6.93,6.82,6.86,0,0,0
+Matúš Bero,Bochum,GER-Bundesliga,2024/25,MF,28.0,2565,7.03,6.95,6.93,1,0,0
+Mathías Olivera,Napoli,ITA-Serie A,2025/26,"DF,MF",27.0,1370,6.76,6.86,6.97,0,0,0
+Serhou Guirassy,Dortmund,GER-Bundesliga,2024/25,FW,28.0,2598,7.26,7.2,7.1,1,1,1
+Yann Aurel Bisseck,Inter,ITA-Serie A,2025/26,DF,24.0,1922,7.11,6.99,7.0,1,0,0
+Matteo Cancellieri,Lazio,ITA-Serie A,2025/26,FW,23.0,1725,6.87,6.85,6.8,0,0,0
+Thomas Partey,Villarreal,ESP-La Liga,2025/26,MF,32.0,934,6.63,6.74,6.71,0,0,0
+Nobel Mendy,Rayo Vallecano,ESP-La Liga,2025/26,DF,20.0,1797,6.72,6.82,6.84,0,0,0
+Bilal El Khannouss,Stuttgart,GER-Bundesliga,2025/26,"MF,FW",21.0,1630,6.98,7.11,7.06,0,1,1
+Danny Welbeck,Brighton,ENG-Premier League,2025/26,FW,34.0,2258,6.68,6.92,6.84,0,0,0
+Pablo Durán,Celta Vigo,ESP-La Liga,2025/26,"FW,MF",24.0,1425,6.58,6.64,6.67,0,0,0
+Alieu Fadera,Como,ITA-Serie A,2024/25,MF,22.0,1644,6.92,6.84,6.84,0,0,0
+Phil Foden,Manchester City,ENG-Premier League,2025/26,MF,25.0,2086,7.01,7.22,7.21,1,1,1
+Jean Mattéo Bahoya,Frankfurt,GER-Bundesliga,2024/25,MF,19.0,921,6.9,6.82,6.84,0,0,0
+Héctor Fort,Elche,ESP-La Liga,2025/26,"DF,MF",18.0,482,6.69,6.67,6.69,0,0,0
+Xaver Schlager,RB Leipzig,GER-Bundesliga,2025/26,MF,27.0,1837,6.94,6.94,6.9,0,0,0
+Thierno Barry,Villarreal,ESP-La Liga,2024/25,FW,21.0,2323,6.98,6.87,6.92,0,0,0
+Daniel Maldini,Monza,ITA-Serie A,2024/25,"MF,FW",22.0,1306,6.77,6.72,6.73,0,0,0
+Warren Kamanzi,Toulouse,FRA-Ligue 1,2024/25,MF,23.0,1022,6.74,6.82,6.81,0,0,0
+Khvicha Kvaratskhelia,PSG,FRA-Ligue 1,2025/26,FW,24.0,1479,7.18,7.26,7.17,1,1,1
+Olasagasti,Real Sociedad,ESP-La Liga,2024/25,MF,23.0,857,6.72,6.69,6.66,0,0,0
+Amos Pieper,Werder Bremen,GER-Bundesliga,2025/26,DF,27.0,1502,7.03,6.89,6.99,1,0,0
+Nicolò Barella,Inter,ITA-Serie A,2025/26,MF,28.0,2517,7.19,7.25,7.16,1,1,1
+Kevin De Bruyne,Manchester City,ENG-Premier League,2024/25,"MF,FW",33.0,1702,7.4,7.16,7.16,1,1,1
+Maduka Okoye,Udinese,ITA-Serie A,2024/25,GK,24.0,2250,6.96,7.11,7.01,0,1,0
+Antonio Candela,Venezia,ITA-Serie A,2024/25,"MF,DF",24.0,1008,6.38,6.64,6.59,0,0,0
+Péter Gulácsi,RB Leipzig,GER-Bundesliga,2025/26,GK,35.0,2008,6.88,6.76,7.07,0,0,1
+Sandi Lovrić,Udinese,ITA-Serie A,2024/25,MF,26.0,2308,6.85,6.81,6.84,0,0,0
+Jamal Musiala,Bayern Munich,GER-Bundesliga,2025/26,"MF,FW",22.0,683,6.71,6.99,6.9,0,0,0
+Yukinari Sugawara,Werder Bremen,GER-Bundesliga,2025/26,"DF,MF",25.0,2428,6.52,6.82,6.8,0,0,0
+Pietro Comuzzo,Fiorentina,ITA-Serie A,2025/26,DF,20.0,1696,6.64,6.78,6.78,0,0,0
+Gianluca Busio,Venezia,ITA-Serie A,2024/25,MF,22.0,2518,6.84,6.74,6.8,0,0,0
+Álvaro García,Rayo Vallecano,ESP-La Liga,2024/25,"MF,FW",31.0,2559,7.04,6.89,6.93,1,0,0
+Jens Castrop,Gladbach,GER-Bundesliga,2025/26,MF,22.0,1584,6.69,6.8,6.78,0,0,0
+Jan-Niklas Beste,Freiburg,GER-Bundesliga,2025/26,MF,26.0,1704,6.8,6.82,6.88,0,0,0
+Arnaut Danjuma,Girona,ESP-La Liga,2024/25,"MF,FW",27.0,1335,6.82,6.7,6.78,0,0,0
+Nicolas Fonseca,Oviedo,ESP-La Liga,2025/26,MF,26.0,1018,6.76,6.72,6.7,0,0,0
+Jens Cajuste,Ipswich Town,ENG-Premier League,2024/25,MF,24.0,1959,6.7,6.72,6.74,0,0,0
+Bart Verbruggen,Brighton,ENG-Premier League,2024/25,GK,21.0,3240,6.87,6.98,7.02,0,1,1
+Lorenzo De Silvestri,Bologna,ITA-Serie A,2024/25,DF,36.0,1060,6.76,6.61,6.6,0,0,0
+Valentín Gómez,Real Betis,ESP-La Liga,2025/26,DF,22.0,1882,6.71,6.87,6.83,0,0,0
+Ruben Kluivert,Lyon,FRA-Ligue 1,2025/26,DF,24.0,772,6.52,6.81,6.75,0,0,0
+Nikola Krstović,Lecce,ITA-Serie A,2024/25,FW,24.0,3057,7.14,6.94,6.92,1,1,0
+Marc Casado,Barcelona,ESP-La Liga,2025/26,MF,21.0,989,6.7,6.8,6.77,0,0,0
+Mike Maignan,Milan,ITA-Serie A,2025/26,GK,30.0,3295,7.23,7.14,7.06,1,1,1
+Kosta Nedeljković,RB Leipzig,GER-Bundesliga,2024/25,"DF,MF",18.0,479,6.54,6.62,6.81,0,0,0
+Bilal El Khannouss,Leicester City,ENG-Premier League,2024/25,MF,20.0,2182,6.91,6.9,6.98,0,0,0
+Jonathan Gradit,Lens,FRA-Ligue 1,2025/26,DF,32.0,807,6.7,6.77,6.69,0,0,0
+Luis Henrique,Marseille,FRA-Ligue 1,2024/25,MF,22.0,2613,7.17,7.1,7.11,1,1,1
+Hugo Magnetti,Brest,FRA-Ligue 1,2025/26,MF,27.0,2688,6.81,6.85,6.91,0,0,0
+Anton Kade,Augsburg,GER-Bundesliga,2025/26,"MF,FW",21.0,1743,6.84,6.86,6.85,0,0,0
+Rafa Mir,Valencia,ESP-La Liga,2024/25,"FW,MF",27.0,753,6.6,6.62,6.58,0,0,0
+Jáder Durán,Aston Villa,ENG-Premier League,2024/25,FW,20.0,638,6.75,6.78,6.72,0,0,0
+Diant Ramaj,Heidenheim,GER-Bundesliga,2025/26,GK,23.0,2790,6.94,6.94,7.05,0,0,1
+Lucas Perri,Lyon,FRA-Ligue 1,2024/25,GK,26.0,2970,7.13,6.86,7.0,1,0,1
+Lukas Klostermann,RB Leipzig,GER-Bundesliga,2024/25,DF,28.0,1838,6.91,6.87,6.81,0,0,0
+Giovani Lo Celso,Real Betis,ESP-La Liga,2025/26,MF,29.0,1393,6.98,7.0,6.99,0,0,0
+Diego Gómez,Brighton,ENG-Premier League,2024/25,MF,21.0,516,6.84,6.89,6.77,0,0,0
+Manuel Lazzari,Lazio,ITA-Serie A,2025/26,DF,31.0,938,6.61,6.63,6.69,0,0,0
+Brennan Johnson,Tottenham,ENG-Premier League,2024/25,"FW,MF",23.0,2177,7.08,6.93,6.95,1,0,0
+Daniel Elfadli,Hamburger SV,GER-Bundesliga,2025/26,DF,28.0,1253,6.56,6.73,6.73,0,0,0
+Marc Bernal,Barcelona,ESP-La Liga,2025/26,MF,18.0,790,6.9,6.91,6.8,0,0,0
+Karim Adeyemi,Dortmund,GER-Bundesliga,2024/25,"MF,FW",22.0,1433,7.08,7.04,7.06,1,1,0
+Nicolò Cambiaghi,Bologna,ITA-Serie A,2024/25,"MF,FW",23.0,620,6.99,6.87,6.89,0,0,0
+Iñigo Lekue,Athletic Club,ESP-La Liga,2025/26,DF,32.0,600,6.28,6.52,6.57,0,0,0
+Gerónimo Rulli,Marseille,FRA-Ligue 1,2025/26,GK,33.0,2610,7.08,7.11,7.04,1,1,1
+Yan Diomandé,Leganés,ESP-La Liga,2024/25,MF,17.0,545,7.16,6.78,6.82,1,0,0
+James Garner,Everton,ENG-Premier League,2024/25,"MF,DF",23.0,1594,6.96,6.76,6.75,0,0,0
+Karol Linetty,Torino,ITA-Serie A,2024/25,MF,29.0,1540,6.65,6.67,6.64,0,0,0
+Matija Nastasić,Leganés,ESP-La Liga,2024/25,DF,31.0,2110,6.86,6.78,6.86,0,0,0
+Joel Pohjanpalo,Venezia,ITA-Serie A,2024/25,FW,29.0,1603,6.91,6.69,6.7,0,0,0
+Gabriele Zappa,Cagliari,ITA-Serie A,2025/26,"DF,MF",25.0,1597,6.57,6.78,6.75,0,0,0
+Jesus Rodríguez,Real Betis,ESP-La Liga,2024/25,MF,18.0,1111,6.75,6.64,6.69,0,0,0
+Lucas Beltrán,Valencia,ESP-La Liga,2025/26,FW,24.0,1365,6.59,6.69,6.74,0,0,0
+Jan Ziółkowski,Roma,ITA-Serie A,2025/26,DF,20.0,517,6.81,6.72,6.73,0,0,0
+Adrian Beck,Heidenheim,GER-Bundesliga,2024/25,"MF,FW",27.0,1598,6.88,6.9,6.87,0,0,0
+Jann-Fiete Arp,Holstein Kiel,GER-Bundesliga,2024/25,FW,24.0,713,6.63,6.65,6.68,0,0,0
+Daouda Guindo,Brest,FRA-Ligue 1,2025/26,DF,22.0,1686,6.47,6.78,6.84,0,0,0
+Steve Mandanda,Rennes,FRA-Ligue 1,2024/25,GK,39.0,1486,6.71,7.01,6.97,0,1,0
+Tim Siersleben,Heidenheim,GER-Bundesliga,2024/25,DF,24.0,1182,6.74,6.71,6.67,0,0,0
+Patrick Mainka,Heidenheim,GER-Bundesliga,2025/26,DF,30.0,3060,6.85,7.05,7.02,0,1,1
+Martijn Kaars,St Pauli,GER-Bundesliga,2025/26,FW,26.0,1348,6.5,6.59,6.67,0,0,0
+Maghnes Akliouche,Monaco,FRA-Ligue 1,2025/26,"MF,FW",23.0,2400,7.05,7.04,7.01,1,1,1
+Leonardo Bittencourt,Werder Bremen,GER-Bundesliga,2025/26,MF,31.0,615,6.64,6.82,6.75,0,0,0
+Matias Moreno,Levante,ESP-La Liga,2025/26,DF,21.0,2252,6.8,6.78,6.85,0,0,0
+Javi Rueda,Celta Vigo,ESP-La Liga,2025/26,MF,23.0,1404,6.8,6.86,6.84,0,0,0
+Julian Ryerson,Dortmund,GER-Bundesliga,2025/26,MF,27.0,2266,7.08,7.08,7.12,1,1,1
+Curtis Jones,Liverpool,ENG-Premier League,2024/25,"MF,DF",23.0,1712,6.91,6.97,6.97,0,0,0
+Gavi,Barcelona,ESP-La Liga,2025/26,MF,20.0,573,6.82,6.76,6.75,0,0,0
+Bradley Barcola,PSG,FRA-Ligue 1,2024/25,FW,21.0,2181,7.25,7.4,7.43,1,1,1
+Mario Sauer,Toulouse,FRA-Ligue 1,2025/26,MF,21.0,651,6.58,6.66,6.66,0,0,0
+Leif Davis,Ipswich Town,ENG-Premier League,2024/25,DF,24.0,2743,6.77,6.91,7.0,0,0,1
+Isak Jansson,Nice,FRA-Ligue 1,2025/26,"FW,MF",23.0,644,6.56,6.65,6.64,0,0,0
+Matty Cash,Aston Villa,ENG-Premier League,2025/26,DF,27.0,3014,6.83,6.98,6.95,0,0,0
+Brajan Gruda,RB Leipzig,GER-Bundesliga,2025/26,"MF,FW",21.0,753,7.18,6.81,6.9,1,0,0
+Ezechiel Banzuzi,RB Leipzig,GER-Bundesliga,2025/26,MF,20.0,597,6.64,6.74,6.7,0,0,0
+Sheraldo Becker,Mainz 05,GER-Bundesliga,2025/26,FW,30.0,946,6.56,6.55,6.64,0,0,0
+Hicham Boudaoui,Nice,FRA-Ligue 1,2024/25,MF,24.0,2435,7.14,6.93,6.9,1,0,0
+Leonardo Balerdi,Marseille,FRA-Ligue 1,2024/25,DF,25.0,2273,6.92,7.16,7.08,0,1,1
+Jules Koundé,Barcelona,ESP-La Liga,2025/26,DF,26.0,2261,6.9,7.12,7.09,0,1,1
+Baptiste Santamaria,Nice,FRA-Ligue 1,2024/25,MF,29.0,927,6.9,6.87,6.81,0,0,0
+Ado Onaiwu,Auxerre,FRA-Ligue 1,2024/25,"MF,FW",28.0,957,6.7,6.78,6.73,0,0,0
+William Osula,Newcastle,ENG-Premier League,2025/26,FW,21.0,819,6.81,6.72,6.73,0,0,0
+Tyrhys Dolan,Espanyol,ESP-La Liga,2025/26,MF,23.0,2415,6.75,6.79,6.88,0,0,0
+Ivan Smolčić,Como,ITA-Serie A,2024/25,DF,23.0,630,6.81,6.66,6.66,0,0,0
+Fran Beltrán,Celta Vigo,ESP-La Liga,2024/25,MF,25.0,2421,6.84,6.88,6.87,0,0,0
+Adrien Rabiot,Milan,ITA-Serie A,2025/26,MF,30.0,2550,7.23,7.12,7.05,1,1,1
+Cedric Zesiger,Augsburg,GER-Bundesliga,2024/25,DF,26.0,1221,6.93,6.81,6.7,0,0,0
+Facundo Medina,Marseille,FRA-Ligue 1,2025/26,DF,26.0,1365,6.82,6.84,6.79,0,0,0
+Jonathan Ikone,Paris,FRA-Ligue 1,2025/26,"MF,FW",27.0,1100,6.81,6.83,6.81,0,0,0
+Alberto Paleari,Torino,ITA-Serie A,2025/26,GK,32.0,2610,7.07,6.97,7.02,1,0,1
+Bukayo Saka,Arsenal,ENG-Premier League,2024/25,"FW,MF",22.0,1729,7.6,7.29,7.23,1,1,1
+Luca Reggiani,Dortmund,GER-Bundesliga,2025/26,DF,17.0,511,6.8,6.77,6.73,0,0,0
+Marco Palestra,Cagliari,ITA-Serie A,2025/26,"MF,DF",20.0,3081,7.02,6.85,6.98,1,0,0
+Oier Zarraga,Udinese,ITA-Serie A,2025/26,MF,26.0,475,6.57,6.61,6.63,0,0,0
+Romano Schmid,Werder Bremen,GER-Bundesliga,2025/26,"MF,FW",25.0,2982,6.91,7.13,7.14,0,1,1
+Kyle Walker-Peters,Southampton,ENG-Premier League,2024/25,"MF,DF",27.0,2918,6.8,6.91,6.87,0,0,0
+Alexis Vossah,Toulouse,FRA-Ligue 1,2025/26,MF,17.0,1092,6.48,6.68,6.74,0,0,0
+Morato,Nottingham,ENG-Premier League,2025/26,DF,24.0,1345,6.95,6.81,6.88,0,0,0
+Michel Mboula,Metz,FRA-Ligue 1,2025/26,"DF,MF",22.0,746,6.76,6.78,6.73,0,0,0
+Emmanuel Agbadou,Wolves,ENG-Premier League,2025/26,DF,28.0,1101,6.85,6.8,6.87,0,0,0
