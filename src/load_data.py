@@ -103,3 +103,53 @@ def test_db_connection(uri: Optional[str] = None) -> Tuple[bool, str, Optional[D
 
 def sanitize_value(val: Any) -> Any:
     """Recursively convert NaN, inf, and numpy data types into BSON-compatible Python types."""
+    if val is None:
+        return None
+    if isinstance(val, (float, np.floating)):
+        if math.isnan(val) or math.isinf(val):
+            return None
+        return float(val)
+    if isinstance(val, (int, np.integer)):
+        return int(val)
+    if isinstance(val, (bool, np.bool_)):
+        return bool(val)
+    if isinstance(val, np.ndarray):
+        return [sanitize_value(x) for x in val.tolist()]
+    if isinstance(val, dict):
+        return {str(k): sanitize_value(v) for k, v in val.items()}
+    if isinstance(val, list):
+        return [sanitize_value(x) for x in val]
+    if pd.isna(val):
+        return None
+    return val
+
+
+def prepare_player_documents(df: pd.DataFrame) -> List[Dict[str, Any]]:
+    """Transform raw player seasons DataFrame into sanitized MongoDB documents with deterministic _id."""
+    documents: List[Dict[str, Any]] = []
+
+    for _, row in df.iterrows():
+        doc: Dict[str, Any] = {}
+        for col in df.columns:
+            val = row[col]
+            doc[col] = sanitize_value(val)
+
+        # Build compound deterministic primary key
+        # Primary key: player_team_season_league (guaranteed 0 duplicates)
+        player_clean = str(doc.get("player", "unknown")).replace(" ", "_")
+        team_clean = str(doc.get("team", "unknown")).replace(" ", "_")
+        season_clean = str(doc.get("season", "0"))
+        league_clean = str(doc.get("league", "unknown")).replace(" ", "_")
+
+        doc["_id"] = f"{player_clean}__{team_clean}__{season_clean}__{league_clean}"
+        documents.append(doc)
+
+    return documents
+
+
+def prepare_team_documents(df: pd.DataFrame) -> List[Dict[str, Any]]:
+    """Aggregate player records into team-level summary documents for the teams collection."""
+    grouped = df.groupby(["team", "league", "season", "season_label"], as_index=False)
+    team_docs: List[Dict[str, Any]] = []
+
+    for (team, league, season, season_label), group in grouped:
