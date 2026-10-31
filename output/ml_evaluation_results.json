@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-31T15:01:46.252758+00:00",
+  "sample_counts": {
+    "total_eligible": 3838,
+    "train": 3070,
+    "test": 768
+  },
+  "regression": {
+    "Linear Regression": {
+      "r2_score": 0.653,
+      "mae": 0.0984,
+      "rmse": 0.1316
+    },
+    "Decision Tree Regressor": {
+      "r2_score": 0.4838,
+      "mae": 0.1257,
+      "rmse": 0.1605
+    },
+    "Random Forest Regressor": {
+      "r2_score": 0.643,
+      "mae": 0.104,
+      "rmse": 0.1335
+    }
+  },
+  "classification": {
+    "Logistic Regression": {
+      "accuracy": 0.8529,
+      "precision": 0.7185,
+      "recall": 0.564,
+      "f1_score": 0.6319
+    },
+    "Decision Tree Classifier": {
+      "accuracy": 0.8255,
+      "precision": 0.6462,
+      "recall": 0.4884,
+      "f1_score": 0.5563
+    },
+    "Random Forest Classifier": {
+      "accuracy": 0.8477,
+      "precision": 0.7007,
+      "recall": 0.5581,
+      "f1_score": 0.6214
+    }
+  },
+  "best_models": {
+    "regression": "Linear Regression",
+    "classification": "Logistic Regression"
+  },
+  "top_features": [
+    {
+      "feature": "ss_touches",
+      "importance": 0.1557
+    },
+    {
+      "feature": "fb_gls",
+      "importance": 0.1117
+    },
+    {
+      "feature": "pos_group_GK",
+      "importance": 0.103
+    },
+    {
+      "feature": "playing_time_min",
+      "importance": 0.0931
+    },
+    {
+      "feature": "ss_groundDuelsWonPercentage",
+      "importance": 0.0466
+    },
+    {
+      "feature": "us_xg",
+      "importance": 0.0393
+    },
+    {
+      "feature": "xa_p90",
+      "importance": 0.0357
+    },
+    {
+      "feature": "ss_keyPasses",
+      "importance": 0.0297
+    }
+  ]
+}
