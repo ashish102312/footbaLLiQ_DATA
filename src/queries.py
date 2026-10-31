@@ -138,3 +138,123 @@ def get_top_assist_providers(
         "_id": 0,
     }
 
+    cursor = player_col.find(query, projection).sort("fb_ast", -1).limit(limit)
+    return list(cursor)
+
+
+def get_best_goals_per_90(
+    db: Database, min_minutes: int = 900, limit: int = 10
+) -> List[Dict[str, Any]]:
+    """Calculate best goals per 90 using MongoDB Aggregation Pipeline ($match, $project, $sort, $limit)."""
+    player_col = db["player_season_stats"]
+
+    pipeline = [
+        # Filter players with significant minutes and positive goals
+        {
+            "$match": {
+                "playing_time_min": {"$gte": min_minutes},
+                "fb_gls": {"$gt": 0},
+            }
+        },
+        # Compute goals_p90 = (fb_gls / (playing_time_min / 90.0))
+        {
+            "$project": {
+                "_id": 0,
+                "player": 1,
+                "team": 1,
+                "league": 1,
+                "season_label": 1,
+                "age": 1,
+                "pos": 1,
+                "playing_time_min": 1,
+                "fb_gls": 1,
+                "us_xg": 1,
+                "goals_p90": {
+                    "$round": [
+                        {
+                            "$multiply": [
+                                {"$divide": ["$fb_gls", "$playing_time_min"]},
+                                90.0,
+                            ]
+                        },
+                        2,
+                    ]
+                },
+            }
+        },
+        {"$sort": {"goals_p90": -1}},
+        {"$limit": limit},
+    ]
+
+    return list(player_col.aggregate(pipeline))
+
+
+def get_league_player_statistics(db: Database) -> List[Dict[str, Any]]:
+    """Aggregate league-wide player statistics using $group, $sort, and $project."""
+    player_col = db["player_season_stats"]
+
+    pipeline = [
+        {
+            "$group": {
+                "_id": "$league",
+                "total_player_seasons": {"$sum": 1},
+                "unique_players": {"$addToSet": "$player"},
+                "total_goals": {"$sum": "$fb_gls"},
+                "total_assists": {"$sum": "$fb_ast"},
+                "avg_player_age": {"$avg": "$age"},
+                "avg_match_rating": {"$avg": "$ss_rating"},
+                "total_market_value": {"$sum": "$fifa_value_eur"},
+            }
+        },
+        {
+            "$project": {
+                "_id": 0,
+                "league": "$_id",
+                "total_player_seasons": 1,
+                "unique_players_count": {"$size": "$unique_players"},
+                "total_goals": 1,
+                "total_assists": 1,
+                "avg_goals_per_player": {
+                    "$round": [
+                        {"$divide": ["$total_goals", "$total_player_seasons"]},
+                        2,
+                    ]
+                },
+                "avg_player_age": {"$round": ["$avg_player_age", 1]},
+                "avg_match_rating": {"$round": ["$avg_match_rating", 2]},
+                "total_market_value_eur": "$total_market_value",
+            }
+        },
+        {"$sort": {"total_goals": -1}},
+    ]
+
+    return list(player_col.aggregate(pipeline))
+
+
+def get_team_performance_summary(
+    db: Database, league: Optional[str] = None, limit: int = 15
+) -> List[Dict[str, Any]]:
+    """Query team-level summary documents from the teams collection."""
+    teams_col = db["teams"]
+    query: Dict[str, Any] = {}
+    if league:
+        query["league"] = league
+
+    projection = {
+        "_id": 0,
+        "team": 1,
+        "league": 1,
+        "season_label": 1,
+        "squad_size": 1,
+        "total_goals": 1,
+        "total_assists": 1,
+        "total_xg": 1,
+        "avg_squad_age": 1,
+        "total_market_value_eur": 1,
+        "top_scorer": 1,
+    }
+
+    cursor = teams_col.find(query, projection).sort("total_goals", -1).limit(limit)
+    return list(cursor)
+
+
