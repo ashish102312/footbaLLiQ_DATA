@@ -153,3 +153,66 @@ def prepare_team_documents(df: pd.DataFrame) -> List[Dict[str, Any]]:
     team_docs: List[Dict[str, Any]] = []
 
     for (team, league, season, season_label), group in grouped:
+        top_scorer_row = group.loc[group["fb_gls"].idxmax()] if not group.empty else None
+        top_scorer_name = top_scorer_row["player"] if top_scorer_row is not None else None
+        top_scorer_goals = int(top_scorer_row["fb_gls"]) if top_scorer_row is not None else 0
+
+        doc: Dict[str, Any] = {
+            "_id": f"{str(team).replace(' ', '_')}__{season}__{str(league).replace(' ', '_')}",
+            "team": str(team),
+            "league": str(league),
+            "season": int(season),
+            "season_label": str(season_label),
+            "squad_size": int(len(group)),
+            "total_goals": int(group["fb_gls"].sum()),
+            "total_assists": int(group["fb_ast"].sum()),
+            "total_shots": int(group["fb_sh"].sum()) if "fb_sh" in group.columns else 0,
+            "total_shots_on_target": int(group["fb_sot"].sum()) if "fb_sot" in group.columns else 0,
+            "total_xg": round(float(group["us_xg"].sum()), 2) if "us_xg" in group.columns and group["us_xg"].notna().any() else 0.0,
+            "total_xa": round(float(group["us_xa"].sum()), 2) if "us_xa" in group.columns and group["us_xa"].notna().any() else 0.0,
+            "avg_squad_age": round(float(group["age"].mean()), 2) if "age" in group.columns and group["age"].notna().any() else None,
+            "total_market_value_eur": round(float(group["fifa_value_eur"].sum()), 2) if "fifa_value_eur" in group.columns and group["fifa_value_eur"].notna().any() else 0.0,
+            "top_scorer": {
+                "player": top_scorer_name,
+                "goals": top_scorer_goals,
+            },
+        }
+        team_docs.append(sanitize_value(doc))
+
+    return team_docs
+
+
+def prepare_league_documents(df: pd.DataFrame) -> List[Dict[str, Any]]:
+    """Aggregate player records into league-level summary documents for the leagues collection."""
+    grouped = df.groupby("league")
+    league_docs: List[Dict[str, Any]] = []
+
+    country_map = {
+        "ENG-Premier League": ("England", "ENG"),
+        "ESP-La Liga": ("Spain", "ESP"),
+        "FRA-Ligue 1": ("France", "FRA"),
+        "GER-Bundesliga": ("Germany", "GER"),
+        "ITA-Serie A": ("Italy", "ITA"),
+    }
+
+    for league, group in grouped:
+        country, code = country_map.get(str(league), ("Europe", "EUR"))
+        doc: Dict[str, Any] = {
+            "_id": str(league),
+            "league_name": str(league),
+            "country": country,
+            "country_code": code,
+            "seasons": sorted([str(s) for s in group["season_label"].unique().tolist()]),
+            "total_teams": int(group["team"].nunique()),
+            "total_players": int(group["player"].nunique()),
+            "total_player_seasons": int(len(group)),
+            "total_goals": int(group["fb_gls"].sum()),
+            "total_assists": int(group["fb_ast"].sum()),
+            "total_xg": round(float(group["us_xg"].sum()), 2) if "us_xg" in group.columns and group["us_xg"].notna().any() else 0.0,
+            "avg_player_age": round(float(group["age"].mean()), 2) if "age" in group.columns and group["age"].notna().any() else None,
+        }
+        league_docs.append(sanitize_value(doc))
+
+    return league_docs
+
+
