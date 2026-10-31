@@ -216,3 +216,164 @@ def prepare_league_documents(df: pd.DataFrame) -> List[Dict[str, Any]]:
     return league_docs
 
 
+def create_indexes(db: Database) -> Dict[str, List[str]]:
+    """Create optimized indexes on all collections for high-performance querying."""
+    indexes_created: Dict[str, List[str]] = {}
+
+    # 1. Indexes for player_season_stats
+    player_col: Collection = db["player_season_stats"]
+    p_idx = [
+        player_col.create_index([("player", ASCENDING)], name="idx_player"),
+        player_col.create_index([("team", ASCENDING)], name="idx_team"),
+        player_col.create_index([("league", ASCENDING)], name="idx_league"),
+        player_col.create_index([("season", ASCENDING)], name="idx_season"),
+        player_col.create_index([("league", ASCENDING), ("season", ASCENDING)], name="idx_league_season"),
+        player_col.create_index([("player", ASCENDING), ("season", ASCENDING)], name="idx_player_season"),
+        player_col.create_index([("fb_gls", DESCENDING)], name="idx_goals_desc"),
+        player_col.create_index([("fb_ast", DESCENDING)], name="idx_assists_desc"),
+        player_col.create_index([("ss_rating", DESCENDING)], name="idx_ss_rating_desc"),
+        player_col.create_index([("fifa_value_eur", DESCENDING)], name="idx_fifa_value_desc"),
+    ]
+    indexes_created["player_season_stats"] = p_idx
+
+    # 2. Indexes for teams
+    teams_col: Collection = db["teams"]
+    t_idx = [
+        teams_col.create_index([("team", ASCENDING)], name="idx_team_name"),
+        teams_col.create_index([("league", ASCENDING)], name="idx_team_league"),
+        teams_col.create_index([("season", ASCENDING)], name="idx_team_season"),
+        teams_col.create_index([("league", ASCENDING), ("season", ASCENDING)], name="idx_team_league_season"),
+    ]
+    indexes_created["teams"] = t_idx
+
+    # 3. Indexes for leagues
+    leagues_col: Collection = db["leagues"]
+    l_idx = [
+        leagues_col.create_index([("league_name", ASCENDING)], name="idx_league_name"),
+        leagues_col.create_index([("country_code", ASCENDING)], name="idx_country_code"),
+    ]
+    indexes_created["leagues"] = l_idx
+
+    # 4. Indexes for ml_results
+    ml_col: Collection = db["ml_results"]
+    m_idx = [
+        ml_col.create_index([("task", ASCENDING)], name="idx_ml_task"),
+        ml_col.create_index([("model_name", ASCENDING)], name="idx_ml_model"),
+        ml_col.create_index([("created_at", DESCENDING)], name="idx_ml_created_at"),
+    ]
+    indexes_created["ml_results"] = m_idx
+
+    return indexes_created
+
+
+def bulk_upsert(collection: Collection, documents: List[Dict[str, Any]], batch_size: int = 1000) -> int:
+    """Perform batched upsert using ReplaceOne to prevent duplicate insertions."""
+    if not documents:
+        return 0
+
+    total_upserted = 0
+    total_docs = len(documents)
+
+    for i in range(0, total_docs, batch_size):
+        batch = documents[i : i + batch_size]
+        operations = [ReplaceOne({"_id": doc["_id"]}, doc, upsert=True) for doc in batch]
+        result = collection.bulk_write(operations, ordered=False)
+        total_upserted += result.upserted_count + result.modified_count + result.matched_count
+
+    return total_upserted
+
+
+def import_csv_to_mongodb(
+    csv_path: Optional[Path] = None, uri: Optional[str] = None
+) -> Dict[str, Any]:
+    """Execute complete ingestion pipeline: read CSV, clean, prepare, and bulk upsert to MongoDB."""
+    if csv_path is None:
+        csv_path = Path(__file__).resolve().parent.parent / "data/top5-football-dataset-master/data/master/player_seasons.csv"
+
+    if not csv_path.exists():
+        raise FileNotFoundError(f"Primary dataset not found at expected path: {csv_path}")
+
+    print(f"\n[INFO] Reading dataset from {csv_path}...")
+    df = pd.read_csv(csv_path, low_memory=False)
+    raw_rows, raw_cols = df.shape
+    print(f"       Successfully loaded {raw_rows:,} records with {raw_cols} columns.")
+
+    # Connect to MongoDB
+    print("\n[INFO] Connecting to MongoDB...")
+    client, db = get_mongo_client(uri)
+    try:
+        # Verify connection
+        client.admin.command("ping")
+        print(f"       Connected to MongoDB database: '{db.name}'")
+    except Exception as e:
+        client.close()
+        raise ConnectionFailure(f"Failed to connect to MongoDB: {e}")
+
+    # Prepare Documents
+    print("\n[INFO] Transforming records for MongoDB storage...")
+    player_docs = prepare_player_documents(df)
+    team_docs = prepare_team_documents(df)
+    league_docs = prepare_league_documents(df)
+
+    print(f"       Prepared {len(player_docs):,} player documents.")
+    print(f"       Prepared {len(team_docs):,} team summary documents.")
+    print(f"       Prepared {len(league_docs):,} league documents.")
+
+    # Bulk Upsert
+    print("\n[INFO] Performing bulk upserts into MongoDB...")
+    p_count = bulk_upsert(db["player_season_stats"], player_docs)
+    t_count = bulk_upsert(db["teams"], team_docs)
+    l_count = bulk_upsert(db["leagues"], league_docs)
+
+    # Create Indexes
+    print("\n[INFO] Creating database indexes for query optimization...")
+    indexes = create_indexes(db)
+    for col_name, idx_list in indexes.items():
+        print(f"       Created {len(idx_list)} indexes on '{col_name}'.")
+
+    # Verify Counts
+    actual_p_count = db["player_season_stats"].count_documents({})
+    actual_t_count = db["teams"].count_documents({})
+    actual_l_count = db["leagues"].count_documents({})
+    actual_m_count = db["ml_results"].count_documents({})
+
+    print("\n[SUCCESS] Document Count Verification in MongoDB:")
+    print(f"   - 'player_season_stats': {actual_p_count:,} documents")
+    print(f"   - 'teams':               {actual_t_count:,} documents")
+    print(f"   - 'leagues':             {actual_l_count:,} documents")
+    print(f"   - 'ml_results':          {actual_m_count:,} documents")
+
+    client.close()
+
+    return {
+        "status": "success",
+        "csv_path": str(csv_path),
+        "counts": {
+            "player_season_stats": actual_p_count,
+            "teams": actual_t_count,
+            "leagues": actual_l_count,
+            "ml_results": actual_m_count,
+        },
+    }
+
+
+if __name__ == "__main__":
+    import sys
+
+    print("=" * 60)
+    print(" FootballIQ - Data Ingestion & MongoDB Loader")
+    print("=" * 60)
+
+    is_ok, msg, _ = test_db_connection()
+    print(f"Connection Status: {'ONLINE' if is_ok else 'OFFLINE'}")
+    print(msg)
+
+    if not is_ok:
+        print("\n[WARNING] MongoDB is currently offline or unreachable.")
+        print("Please check your .env configuration or start your local MongoDB daemon:")
+        print("  brew services start mongodb-community  (macOS)")
+        print("  mongod --config /opt/homebrew/etc/mongod.conf")
+        sys.exit(1)
+
+    import_csv_to_mongodb()
+
